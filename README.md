@@ -10,3 +10,4 @@ Since this is going to be a static website, the styling is going to play a big p
 
 ## More Ideas
 Ideas for more features:
+Styling
