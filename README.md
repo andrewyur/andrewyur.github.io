@@ -10,4 +10,8 @@ Since this is going to be a static website, the styling is going to play a big p
 
 ## More Ideas
 Ideas for more features:
-Styling
+- New styling, cohesive theme for pages
+- incorporate old work
+  - make model more optimized
+  - scaling between different screen sizes
+- set up separate pages for projects and other stuff
