@@ -10,8 +10,7 @@ Since this is going to be a static website, the styling is going to play a big p
 
 ## More Ideas
 Ideas for more features:
-- New styling, cohesive theme for pages
-- incorporate old work
-  - make model more optimized
-  - scaling between different screen sizes
-- set up separate pages for projects and other stuff
+- set up separate pages for blog posts about projects and other stuff
+- hovering over hoboken and nashua show maps
+- hovering over pictures changes the picture being displayed
+- use spline & webflow to make 3d model background for project images
