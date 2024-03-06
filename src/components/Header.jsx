@@ -1,9 +1,9 @@
 export function Header() {
     return (
-        <nav>
-            <a href="#aboutme">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div id="header">
+            <button onClick={() => {window.scroll(0, 0)}}>About Me</button>
+            <button onClick={() => {window.scroll(0, document.getElementById("projects").offsetTop)}}>Projects</button>
+            <button onClick={() => {window.scroll(0, document.getElementById("contact").offsetTop)}}>Contact</button>
+        </div>
     )
 }

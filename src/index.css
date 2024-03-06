@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* main {
+  position: fixed;
+
+} */
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+main * {
+  display: inline-block;
+}
+
+main {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* ------------------------- NAV BAR ------------------------- */
+
+#header {
+  position: fixed;
+  top: 7vh;
+  right: 7vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-end;
+}
+
+/* ------------------------- TEXT ------------------------- */
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5rem;
+}
+
+p {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+a,
+a:active,
+a:visited,
+button {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer;
+  text-align: left;
+}

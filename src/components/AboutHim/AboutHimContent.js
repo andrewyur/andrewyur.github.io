@@ -1,4 +1,4 @@
-export const AboutMeContent = {
+export const AboutHimContent = {
   paragraph1: (
     <p>
       Andrew Yurovchak is currently a sophomore at Stevens Institute for
