@@ -50,6 +50,7 @@ img {
   flex-direction: column;
   gap: 10px;
   align-items: flex-end;
+  transition: 100ms ease-in;
 }
 
 #header button:nth-of-type(2) {
