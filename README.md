@@ -14,3 +14,4 @@ Ideas for more features:
 - hovering over hoboken and nashua show maps
 - hovering over pictures changes the picture being displayed
 - use spline & webflow to make 3d model background for project images
+- SEO and indexing stuff

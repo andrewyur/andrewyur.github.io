@@ -1,6 +1,6 @@
 export const ProjectsContent = {
   paragraph1: (
-    <p>
+    <p className="par">
       Andrew doesn't really have a ton of projects to display. With all the
       activities he does, and a software engineering internship at{" "}
       <a
@@ -19,7 +19,7 @@ export const ProjectsContent = {
     desc: "with React.js, Webflow+Spline, & GitHub Pages",
   },
   paragraph2: (
-    <p>
+    <p className="par">
       Regardless, he taught himself how to make websites over the summer with
       the help of{" "}
       <a

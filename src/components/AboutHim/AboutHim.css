@@ -145,8 +145,8 @@ img {
 #abouthim .par:nth-of-type(3) {
   position: absolute;
   top: 150vh;
-  right: 10vw;
-  width: 30vw;
+  right: 13vw;
+  width: 25vw;
 
   z-index: 2;
 }
