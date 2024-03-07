@@ -1,6 +1,6 @@
 export const AboutHimContent = {
   paragraph1: (
-    <p>
+    <p className="par">
       Andrew Yurovchak is currently a sophomore at Stevens Institute for
       technology, studying Computer Science. He is a developer for the{" "}
       <a
@@ -28,7 +28,7 @@ export const AboutHimContent = {
     </p>
   ),
   paragraph2: (
-    <p>
+    <p className="par">
       He enjoys going for walks, taking in the beautiful atmosphere of{" "}
       <span id="hoboken">Hoboken, NJ</span>, where he resides during the school
       year, and <span id="nashua">Nashua, NH</span>, where he lives in the
@@ -37,7 +37,7 @@ export const AboutHimContent = {
   ),
   image1: <img src="/IMG_0485.JPG" alt="andrew yurovchak"></img>,
   paragraph3: (
-    <p>
+    <p className="par">
       He listens to a lot of music, and likes to take{" "}
       <span id="pictures">pictures</span> and doodle on{" "}
       <span id="doodles">MS Paint</span>. He also folds origami and plays pool

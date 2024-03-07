@@ -1,6 +1,11 @@
 :root {
-  --bg1dark: darkolivegreen;
-  --bg2light: coral;
+  --abouthimAccent: #663F46;
+  --abouthimBg: #BEC9C1;
+  --abouthimBacker: #C9D6EA;
+  --projectsBg: #E8A783;
+  --projectsAccent: #FF553E;
+  --contactAccent: #663F46;
+  --contactAccent: #FAF8E6;
 }
 
 * {
@@ -39,12 +44,22 @@ img {
 
 #header {
   position: fixed;
-  top: 7vh;
-  right: 7vh;
+  top: 10vh;
+  right: 78vh;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
   align-items: flex-end;
+}
+
+#header button:nth-of-type(2) {
+  position: relative;
+  left: 20px
+}
+
+#header button:nth-of-type(3) {
+  position: relative;
+  right: 20px
 }
 
 /* ------------------------- TEXT ------------------------- */
@@ -54,7 +69,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 4.5rem;
+  font-size: 6rem;
   margin: 0;
 }
 
@@ -77,6 +92,7 @@ a:visited {
   font-size: 1.5rem;
   text-decoration: none;
   margin: 0;
+  
 }
 
 button {
