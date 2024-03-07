@@ -19,4 +19,5 @@ export const ContactContent = {
       .
     </p>
   ),
+  image: <img src="/banner source hd.png" alt="doodle of a gorilla"/>
 };

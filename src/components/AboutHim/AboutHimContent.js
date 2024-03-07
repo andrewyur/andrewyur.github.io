@@ -19,7 +19,7 @@ export const AboutHimContent = {
       >
         Stevens Div. III Fencing Team
       </a>
-      , for which he trains for 10hrs a week, and travels often. He is the
+      , for which he trains for ~10hrs a week, and travels often. He is the
       secretary for{" "}
       <a href="https://lodge804.com/Home.html" target="_blank" rel="noreferrer">
         Chi Psi Fraternity at Stevens
@@ -30,11 +30,23 @@ export const AboutHimContent = {
   paragraph2: (
     <p>
       He enjoys going for walks, taking in the beautiful atmosphere of{" "}
-      <span id="hoboken">Hoboken, NJ</span>, and{" "}
-      <span id="nashua">Nashua, NH</span>. He listens to a lot of music, and
-      likes to take <span id="pictures">pictures</span>. He also folds origami
-      and plays pool when he has time.
+      <span id="hoboken">Hoboken, NJ</span>, where he resides during the school
+      year, and <span id="nashua">Nashua, NH</span>, where he lives in the
+      summer.
     </p>
   ),
-  image: <img src="/IMG_0485.JPG" alt="andrew yurovchak"></img>,
+  image1: <img src="/IMG_0485.JPG" alt="andrew yurovchak"></img>,
+  paragraph3: (
+    <p>
+      He listens to a lot of music, and likes to take{" "}
+      <span id="pictures">pictures</span> and doodle on{" "}
+      <span id="doodles">MS Paint</span>. He also folds origami and plays pool
+      when he has time.
+    </p>
+  ),
+  image2: <img src="/pfp2hd.png" alt="doodle of a monkey"></img>,
+  image3: {
+    image: <img src="/IMG_5438.JPG" alt="some lights and a window"></img>,
+    desc: <p>A photo from a fun night at the lodge</p>
+  }
 };

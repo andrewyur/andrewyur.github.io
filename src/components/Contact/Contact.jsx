@@ -7,5 +7,6 @@ export function Contact() {
         {ContactContent.paragraph1}
         {ContactContent.paragraph2}
         {ContactContent.paragraph3}
+        {ContactContent.image}
     </div>
 }

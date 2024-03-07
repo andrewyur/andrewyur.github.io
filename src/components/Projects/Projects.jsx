@@ -24,5 +24,6 @@ export function Projects() {
         <SmallProject {...(ProjectsContent.smallproject1)} />
         <SmallProject {...(ProjectsContent.smallproject2)} />
         <SmallProject {...(ProjectsContent.smallproject3)} />
+        <div className='accent' /> 
     </div>
 }
