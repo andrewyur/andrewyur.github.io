@@ -1,25 +1,29 @@
 :root {
-  --abouthimAccent: #663F46;
-  --abouthimBg: #BEC9C1;
-  --abouthimBacker: #C9D6EA;
-  --projectsBg: #E8A783;
-  --projectsAccent: #FF553E;
-  --contactAccent: #663F46;
-  --contactBg: #FAF8E6;
+	--abouthimAccent: #663f46;
+	--abouthimBg: #bec9c1;
+	--abouthimBacker: #c9d6ea;
+	--projectsBg: #e8a783;
+	--projectsAccent: #ff553e;
+	--contactAccent: #ff0000;
+	--contactBg: #faf8e6;
 }
 
 * {
-  box-sizing: border-box;
-  -webkit-user-drag: none;
-  user-select: none;
+	box-sizing: border-box;
+	-webkit-user-drag: none;
+	user-select: none;
 }
 
 html,
 body,
 #root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	overflow: hidden;
 }
 
 /* main {
@@ -28,83 +32,82 @@ body,
 } */
 
 ::-webkit-scrollbar {
-  width: 0;
-  display: none;
+	width: 0;
+	display: none;
 }
 
 img {
-  width: 100px;
+	width: 100px;
 }
 
 /* ------------------------- NAV BAR ------------------------- */
 
 #header {
-  position: fixed;
-  z-index: 5;
-  top: 10vh;
-  right: 78vh;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-end;
-  transition: 100ms ease-in;
+	position: fixed;
+	z-index: 5;
+	top: 10vh;
+	right: 78vh;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-end;
+	transition: 100ms ease-in;
 }
 
 #header button:nth-of-type(2) {
-  position: relative;
-  left: 20px
+	position: relative;
+	left: 20px;
 }
 
 #header button:nth-of-type(3) {
-  position: relative;
-  right: 20px
+	position: relative;
+	right: 20px;
 }
 
 /* ------------------------- TEXT ------------------------- */
 
 h1 {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 6rem;
-  margin: 0;
+	font-family: "Roboto Slab", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 6rem;
+	margin: 0;
 }
 
 p {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.7rem;
-  margin: 0;
+	font-family: "EB Garamond", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.7rem;
+	margin: 0;
 }
 
 a,
 a:active,
 a:visited {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  text-decoration: none;
-  margin: 0;
-  
+	font-family: "Roboto Slab", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+	text-decoration: none;
+	margin: 0;
 }
 
 button {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.7rem;
-  margin: 0;
+	font-family: "EB Garamond", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.7rem;
+	margin: 0;
 
-  background: none !important;
-  border: none;
-  padding: 0 !important;
-  cursor: pointer;
-  text-align: left;
-  color: black;
+	background: none !important;
+	border: none;
+	padding: 0 !important;
+	cursor: pointer;
+	text-align: left;
+	color: black;
 }
