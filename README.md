@@ -13,5 +13,8 @@ Ideas for more features:
 - set up separate pages for blog posts about projects and other stuff
 - hovering over hoboken and nashua show maps
 - hovering over pictures changes the picture being displayed
+- animations for accent divs
+- smooth scrolling
+- parallax
 - use spline & webflow to make 3d model background for project images
-- SEO and indexing stuff
+- SEO and web indexing stuff

@@ -4,6 +4,7 @@
     padding-right: 20%;
 
     height: 200vh;
+    width: 100%;
 
     background-color: var(--projectsBg);
 }
