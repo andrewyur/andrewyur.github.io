@@ -1,5 +1,7 @@
 # Portfolio Website
 
+Built with React & create-react-app, deployment with github pages: https://andrewyur.github.io/
+
 This is a portfolio website I have been in the process of creating for a long time. With solo projects I have often had trouble with motivation and burnout. I tend to have such a grand vision for what the project will be, work on it obsessively for a week or so, and run out of motivation after getting in way over my head.
 
 This go around, I am going to focus on creating a small working base, and then adding features in a managable way, instead of trying to do it all in one go.
