@@ -1,128 +1,148 @@
+/*----------------------------------------General Formatting----------------------------------------*/
+
 #projects {
-    position: relative;
-    padding-left: 20%;
-    padding-right: 20%;
+	position: relative;
+	z-index: 1;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 
-    height: 200vh;
-    width: 100%;
+	width: 100%;
 
-    background-color: var(--projectsBg);
+	background-color: var(--projectsBg);
 }
 
 #projects p {
-    color: white;
+	color: white;
 }
 
-#projects a, #projects a:visited, #projects a:active {
-    color: black;
+#projects a,
+#projects a:visited,
+#projects a:active {
+	color: black;
 }
 
 #projects .accent {
-    background-color: var(--projectsAccent);
-    width: 100vw;
-    height: 100vw;
-    border-radius: 100%;
-    
-    position: absolute;
-    top: -30vh;
-    right: -35vw;
+	background-color: var(--projectsAccent);
+	width: 100vw;
+	height: 100vw;
+	border-radius: 100%;
+	z-index: -1;
+	position: absolute;
+	top: -30vh;
+	right: -35vw;
 }
+
+#projects > *:not(h1, .accent) {
+	margin-bottom: 15vh;
+}
+
+/*--------------------Projects General Formatting--------------------*/
+
+#bp a,
+#bp p,
+#sp a,
+#sp p {
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	font-size: 2rem;
+}
+
+/*----------Big Projects----------*/
+
+#bp {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 5vh;
+}
+
+#projects .bp {
+	position: relative;
+}
+
+#projects .bp .text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 40%;
+}
+
+#projects .bp .text a {
+	padding-right: 0.75rem;
+}
+
+#projects .bp .backer {
+	background-color: gray;
+	height: 25vh;
+	width: 55vw;
+}
+
+#projects .bp:nth-of-type(odd) .backer {
+	float: right;
+}
+
+#projects .bp:nth-of-type(even) .backer {
+	float: left;
+}
+
+#projects .bp a {
+	font-size: 3rem;
+}
+
+/*----------Small Projects----------*/
+
+#sp {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+#projects .sp {
+	position: relative;
+}
+
+#projects .sp .text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+#projects .sp .backer {
+	background-color: gray;
+	height: 20vh;
+	width: 20vw;
+}
+
+/*----------------------------------------Position Specific Formatting----------------------------------------*/
 
 #projects h1 {
-    position: absolute;
-    top: -10vh;
-    left: 15vw;
-    z-index: 2;
+	position: absolute;
+	top: -10vh;
+	left: 15vw;
 }
 
-#projects .bp a, #projects .bp p, #projects #sp a, #projects #sp p {
-    position: relative;
-    z-index: 3;
-    display: inline-block;
-    font-size: 2rem;
+#projects > p:nth-of-type(1) {
+	float: right;
+	width: 35vw;
 }
 
-#projects .par:nth-of-type(1) {
-    position: absolute;
-    top: 15vh;
-    right: 12vw;
-
-    width: 35vw;
-
-    z-index: 2;
+#bp {
+	float: center;
+	width: 70vw;
 }
 
-#projects .bp:nth-of-type(1) {
-    position: absolute;
-    top: 60vh;
-    left: 15vw;
-    z-index: 2;
+#projects > p:nth-of-type(2) {
+	float: right;
+	width: 40vw;
 }
 
-#projects .bp:nth-of-type(1) .backer {
-    background-color: gray;
-    height: 25vh;
-    width: 55vw;
-    position: absolute;
-    top: -7vh;
-    left: 17vw;
-}
-
-#projects .bp:nth-of-type(1) a {
-    font-size: 3rem;
-}
-
-#projects .par:nth-of-type(2) {
-    position: absolute;
-    top: 95vh;
-    z-index: 2;
-    width: 40svw;
-}
-
-#sp div:nth-of-type(1) {
-    position: absolute;
-    top: 140vh;
-    left: 15vw;
-    z-index: 2;
-}
-
-#sp div:nth-of-type(1) .backer {
-    background-color: gray;
-    height: 20vh;
-    width: 10vw;
-    position: absolute;
-    top: -5vh;
-    left: -5vw
-}
-
-#sp div:nth-of-type(2) {
-    position: absolute;
-    top: 130vh;
-    right: 15vw;
-    z-index: 2;
-}
-
-#sp div:nth-of-type(2) .backer {
-    background-color: gray;
-    height: 20vh;
-    width: 15vw;
-    position: absolute;
-    top: -20vh;
-    left: 10vw;
-}
-
-#sp div:nth-of-type(3) {
-    position: absolute;
-    top: 160vh;
-    left: 50vw;
-    z-index: 2;
-}
-
-#sp div:nth-of-type(3) .backer {
-    background-color: gray;
-    height: 20vh;
-    width: 10vw;
-    position: absolute;
-    top: 7vh;
-    left: 15vw;
+#sp {
+	float: center;
+	width: 70vw;
 }

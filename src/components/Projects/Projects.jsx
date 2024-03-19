@@ -5,8 +5,10 @@ import { ProjectsContent } from "./ProjectsContent";
 function BigProject(props) {
 	return (
 		<div className="bp">
-			<a href=".">{props.title}</a>
-			<p>{", " + props.desc}</p>
+			<div className="text">
+				<a href=".">{props.title}</a>
+				<p>{props.desc}</p>
+			</div>
 			<div className="backer" />
 		</div>
 	);
@@ -14,9 +16,11 @@ function BigProject(props) {
 
 function SmallProject(props) {
 	return (
-		<div>
-			<a href=".">{props.title}</a>
-			<p>{", " + props.desc}</p>
+		<div className="sp">
+			<div className="text">
+				<a href=".">{props.title}</a>
+				<p>{props.desc}</p>
+			</div>
 			<div className="backer" />
 		</div>
 	);
@@ -27,7 +31,10 @@ export function Projects() {
 		<div id="projects">
 			<h1>Projects</h1>
 			{ProjectsContent.paragraph1}
-			<BigProject {...ProjectsContent.bigproject1} />
+			<div id="bp">
+				<BigProject {...ProjectsContent.bigproject1} />
+				<BigProject {...ProjectsContent.bigproject2} />
+			</div>
 			{ProjectsContent.paragraph2}
 			<div id="sp">
 				<SmallProject {...ProjectsContent.smallproject1} />

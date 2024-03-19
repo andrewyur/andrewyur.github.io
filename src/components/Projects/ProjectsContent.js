@@ -2,7 +2,7 @@ import React from "react";
 
 export const ProjectsContent = {
 	paragraph1: (
-		<p className="par">
+		<p>
 			Andrew doesn&apos;t really have a ton of projects to display. With all the
 			activities he does, and a software engineering internship at{" "}
 			<a
@@ -20,8 +20,12 @@ export const ProjectsContent = {
 		title: "Portfolio Website",
 		desc: "with React.js, Webflow+Spline, & GitHub Pages",
 	},
+	bigproject2: {
+		title: "Discord Poetry Bot",
+		desc: "with OpenAI API, Docker, & Error Logging",
+	},
 	paragraph2: (
-		<p className="par">
+		<p>
 			Regardless, he taught himself how to make websites over the summer with
 			the help of{" "}
 			<a

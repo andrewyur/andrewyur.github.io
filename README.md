@@ -15,14 +15,16 @@ Since this is going to be a static website, the styling is going to play a big p
 Ideas for more features:
 
 - make projects easily expandable/not hard positioned
-  - this means making objects a consistent size and positioned consistenly
-  - can make random offsets for accent backer
+  - container divs + flexbox
+  - margins + relative positioning vs absolute
 - make content scaleable
   - make container div have a max width, centered
+  - convert vw to %
   - make font size scale with container div
   - look up tips for making this look good, because this is important!
 - use spline & webflow to make 3d model background for project images
 - animations for accent divs
+- tons of hover effects
 - smooth scrolling
 - hovering over pictures changes the picture being displayed
 - set up separate pages for blog posts about projects and other stuff
