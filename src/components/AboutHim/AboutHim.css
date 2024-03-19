@@ -1,152 +1,140 @@
+/*----------------------------------------General Formatting----------------------------------------*/
+
 #abouthim {
-  padding-left: 20%;
-  padding-right: 20%;
-  width: 100%;
-  background-color: var(--abouthimBg);
-  height: 210vh;
-  z-index: -1;
+	position: relative;
+	z-index: 1;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
+	width: 100%;
+	background-color: var(--abouthimBg);
 }
 
 #abouthim h1 {
-  color: black;
-  position: absolute;
-  top: 10vh;
-  left: 20vw;
+	color: black;
+	position: absolute;
+	top: 10vh;
+	left: 20vw;
 }
 
 #abouthim .accent {
-  background-color: var(--abouthimAccent);
-  width: 100vw;
-  height: 130vh;
+	background-color: var(--abouthimAccent);
+	width: 100vw;
+	height: 130vh;
 
-  position: absolute;
-  left: -40vw;
-  top: 35vh;
-  z-index: 0;
+	position: absolute;
+	left: -40vw;
+	top: 35vh;
+	z-index: -1;
 
-  transform: rotate(7.64deg);
+	transform: rotate(7.64deg);
 }
 
 #abouthim p {
-  color: black;
+	color: black;
 }
 
 #abouthim a,
 #abouthim a:active,
 #abouthim a:visited {
-  color: white;
+	color: white;
 }
 
 #abouthim span {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-img {
-  position: inherit;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+#abouthim > *:not(h1, .accent) {
+	margin-bottom: 15vh;
 }
 
-#abouthim .par:nth-of-type(1) {
-  position: absolute;
-  top: 55vh;
-  left: 13vw;
-  width: 45vw;
+/*--------------------Image Wrapper Formatting--------------------*/
 
-  z-index: 2;
+#abouthim .backer {
+	background-color: var(--abouthimBacker);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#abouthim .backer:nth-of-type(1) {
-  position: absolute;
-  top: 30vh;
-  right: 15vw;
+/*----------------------------------------Position Specific Formatting----------------------------------------*/
 
-  background-color: var(--abouthimBacker);
-
-  width: 23vw;
-  height: 50vh;
-
-  z-index: 2;
-
-  transform: rotate(-4.5deg);
+#abouthim .container:nth-of-type(1) {
+	margin-top: 25vh;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 
-#abouthim .backer:nth-of-type(1) img {
-  width: 15vw;
-  transform: rotate(1.5deg);
+#abouthim .container:nth-of-type(1) p {
+	margin-top: 10vh;
+	width: 40vw;
 }
 
-#abouthim .par:nth-of-type(2) {
-  position: absolute;
-  top: 110vh;
-  left: 15vw;
-  width: 35vw;
-
-  z-index: 2;
+#abouthim .container:nth-of-type(1) .backer {
+	width: 23vw;
+	height: 50vh;
+	transform: rotate(-4.5deg);
 }
 
-#abouthim .backer:nth-of-type(2) {
-  position: absolute;
-  top: 105vh;
-  right: 15vw;
-
-  background-color: var(--abouthimBacker);
-
-  width: 14vw;
-  height: 14vw;
-
-  z-index: 2;
-
-  transform: rotate(-2deg);
+#abouthim .container:nth-of-type(1) .backer img {
+	width: 15vw;
+	transform: rotate(1.5deg);
 }
 
-#abouthim .backer:nth-of-type(2) img {
-  transform: rotate(2deg);
-  width: 10vw;
+#abouthim .container:nth-of-type(2) {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 
-#abouthim .backer:nth-of-type(3) {
-  position: absolute;
-  top: 145vh;
-  left: 20vw;
-
-  background-color: var(--abouthimBacker);
-
-  width: 25vw;
-  height: 19vw;
-
-  z-index: 2;
-
-  transform: rotate(3.8deg);
+#abouthim .container:nth-of-type(2) .subcontainer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	gap: 5vh;
 }
 
-#abouthim .backer:nth-of-type(3) img {
-  transform: rotate(2deg);
-  width: 20vw;
-
-  transform: translateY(-1vw) rotate(-1deg);
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) {
+	align-items: center;
+	margin-top: -7vh;
 }
 
-#abouthim .backer:nth-of-type(3) p {
-  position: absolute;
-  bottom: 1.5vh;
-  width: 100%;
-  text-align: center;
-  text-wrap: nowrap;
-
-  font-size: 1.3rem;
-
-  transform: rotate(-1deg);
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) .backer {
+	width: 25vw;
+	height: 40vh;
+	transform: rotate(3.8deg);
 }
 
-#abouthim .par:nth-of-type(3) {
-  position: absolute;
-  top: 150vh;
-  right: 13vw;
-  width: 25vw;
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) .backer img {
+	transform: rotate(2deg);
+	width: 20vw;
+}
 
-  z-index: 2;
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) p {
+	width: 35vw;
+}
+
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) {
+	position: relative;
+	z-index: 100;
+	margin-bottom: -10vh;
+}
+
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) p {
+	width: 20vw;
+}
+
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) .backer {
+	transform: rotate(1deg);
+	height: 35vh;
+	width: 18vw;
+}
+
+#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) .backer img {
+	width: 14vw;
+	transform: rotate(-2deg);
 }

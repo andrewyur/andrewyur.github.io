@@ -15,7 +15,6 @@ function App() {
 	});
 
 	function handleScroll() {
-		console.log(window.scrollY);
 		if (window.scrollY === 0) {
 			document.getElementById("header").style.right = "35vw";
 		} else {

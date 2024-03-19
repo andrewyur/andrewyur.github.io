@@ -33,6 +33,7 @@ export function Projects() {
 			{ProjectsContent.paragraph1}
 			<div id="bp">
 				<BigProject {...ProjectsContent.bigproject1} />
+				<p>and also this one:</p>
 				<BigProject {...ProjectsContent.bigproject2} />
 			</div>
 			{ProjectsContent.paragraph2}

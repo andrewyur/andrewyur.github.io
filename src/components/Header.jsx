@@ -12,7 +12,11 @@ export function Header() {
 			</button>
 			<button
 				onClick={() => {
-					window.scroll(0, document.getElementById("projects").offsetTop);
+					window.scroll(
+						0,
+						document.getElementById("projects").offsetTop +
+							document.getElementById("projects").firstChild.offsetTop
+					);
 				}}
 			>
 				Projects

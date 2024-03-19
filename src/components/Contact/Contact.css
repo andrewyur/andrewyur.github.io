@@ -4,6 +4,7 @@
 	background-color: var(--contactBg);
 	height: 70vh;
 	position: relative;
+	z-index: 3;
 }
 
 #contact img {

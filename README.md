@@ -1,8 +1,8 @@
-# Portfolio Page
+# Portfolio Website
 
-This is a portfolio page I have been in the process of creating for a long time. With solo projects I have often had trouble with motivation and burnout. I tend to have such a grand vision for what the project will be, work on it obsessively for a week or so, and run out of motivation after getting in way over my head.
+This is a portfolio website I have been in the process of creating for a long time. With solo projects I have often had trouble with motivation and burnout. I tend to have such a grand vision for what the project will be, work on it obsessively for a week or so, and run out of motivation after getting in way over my head.
 
-This time, I am going to focus on creating a small working base, and then adding features in a managable way, instead of trying to do it all in one go.
+This go around, I am going to focus on creating a small working base, and then adding features in a managable way, instead of trying to do it all in one go.
 
 ## Figma page
 
@@ -14,10 +14,13 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Ideas for more features:
 
-- make projects easily expandable/not hard positioned
+- make everything easily expandable/not hard positioned
   - container divs + flexbox
   - margins + relative positioning vs absolute
+- fix favicon
+- reformat content files
 - make content scaleable
+  - max widths everywhere
   - make container div have a max width, centered
   - convert vw to %
   - make font size scale with container div
@@ -26,8 +29,8 @@ Ideas for more features:
 - animations for accent divs
 - tons of hover effects
 - smooth scrolling
-- hovering over pictures changes the picture being displayed
 - set up separate pages for blog posts about projects and other stuff
+- hovering over pictures changes the picture being displayed
 
 Potential features:
 

@@ -15,7 +15,11 @@ export const ContactContent = {
 	paragraph3: (
 		<p>
 			If you would like to talk to him on LinkedIn,{" "}
-			<a href="https://www.linkedin.com/in/andrew-yurovchak/">
+			<a
+				href="https://www.linkedin.com/in/andrew-yurovchak/"
+				target="_blank"
+				rel="noreferrer"
+			>
 				please click here
 			</a>
 			.

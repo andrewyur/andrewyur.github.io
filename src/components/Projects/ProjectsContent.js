@@ -26,7 +26,7 @@ export const ProjectsContent = {
 	},
 	paragraph2: (
 		<p>
-			Regardless, he taught himself how to make websites over the summer with
+			He also taught himself how to make websites over the summer of 2023 with
 			the help of{" "}
 			<a
 				href="https://www.freecodecamp.org/ayuro"

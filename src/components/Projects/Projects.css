@@ -7,9 +7,7 @@
 	padding-right: 15%;
 	padding-top: 15vh;
 	padding-bottom: 15vh;
-
 	width: 100%;
-
 	background-color: var(--projectsBg);
 }
 
@@ -137,9 +135,15 @@
 	width: 70vw;
 }
 
+#bp > p {
+	width: 100%;
+	text-align: center;
+}
+
 #projects > p:nth-of-type(2) {
-	float: right;
+	float: left;
 	width: 40vw;
+	margin-left: 15vh;
 }
 
 #sp {
