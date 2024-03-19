@@ -14,14 +14,12 @@ Since this is going to be a static website, the styling is going to play a big p
 
 ## More Ideas
 
-Ideas for more features:
+Current Agenda:
 
-- make everything easily expandable/not hard positioned
-  - container divs + flexbox
-  - margins + relative positioning vs absolute
+- separate background + accent divs from text
+  - this fixes some overlapping issues and also would make parallax a lot easier
 - fix favicon
-- reformat content files
-- make content scaleable
+- make content properly scaleable
   - max widths everywhere
   - make container div have a max width, centered
   - convert vw to %
