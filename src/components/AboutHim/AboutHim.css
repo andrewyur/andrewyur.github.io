@@ -28,20 +28,15 @@
 }
 
 #abouthim h1 {
-	color: black;
 	position: absolute;
 	top: 10vh;
 	left: 20vw;
 }
 
-#abouthim p {
-	color: black;
-}
-
-#abouthim a,
-#abouthim a:active,
-#abouthim a:visited {
-	color: white;
+#abouthim img,
+#abouthim div,
+#accent1 {
+	border-radius: 10px;
 }
 
 #abouthim span {
@@ -59,6 +54,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	backdrop-filter: blur(10px);
 }
 
 /*----------------------------------------Position Specific Formatting----------------------------------------*/

@@ -1,11 +1,70 @@
 :root {
-	--abouthimAccent: #663f46;
-	--abouthimBg: #bec9c1;
-	--abouthimBacker: #c9d6ea;
-	--projectsBg: #e8a783;
-	--projectsAccent: #ff553e;
+	--abouthimAccent: #ff553e;
+	--abouthimBg: #ffa879;
+	--abouthimBacker: rgba(171, 139, 139, 0.5);
+	--projectsBg: #ffd1d1;
+	--projectsAccent: #483eff;
 	--contactAccent: #ff0000;
-	--contactBg: #faf8e6;
+	--contactBg: #8c986d;
+}
+
+#abouthim h1 {
+	color: black;
+}
+
+#abouthim p {
+	color: white;
+	background-color: rgba(171, 139, 139, 0.5);
+	border-radius: 10px;
+	padding: 15px 15px 15px 15px;
+	backdrop-filter: blur(10px);
+}
+
+#abouthim a,
+#abouthim a:active,
+#abouthim a:visited {
+	color: black;
+}
+
+#projects h1 {
+	color: black;
+}
+
+#projects p {
+	color: white;
+}
+
+#projects > p,
+#bp > p,
+#projects .text {
+	backdrop-filter: blur(10px);
+	background-color: rgba(3, 255, 137, 0.5);
+	padding: 15px 15px 15px 15px;
+	border-radius: 10px;
+}
+
+#projects a,
+#projects a:active,
+#projects a:visited {
+	color: black;
+}
+
+#contact h1 {
+	color: black;
+}
+
+#contact p {
+	color: white;
+	background-color: rgba(255, 48, 48, 0.5);
+	border-radius: 10px;
+	padding: 15px 15px 15px 15px;
+	backdrop-filter: blur(10px);
+}
+
+#contact a,
+#contact a:active,
+#contact a:visited {
+	color: black;
 }
 
 * {
@@ -23,7 +82,7 @@ body,
 }
 
 #container {
-	/*position absolute makes gorilla and other absolutely positioned elements affect height of document*/
+	/*position absolute makes gorilla and other absolutely positioned elements affect the document height*/
 	position: relative;
 	overflow: hidden;
 }
