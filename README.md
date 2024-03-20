@@ -17,7 +17,6 @@ Since this is going to be a static website, the styling is going to play a big p
 Current Agenda:
 
 - consolidate colors again, maybe into separate css file
-- fix favicon
 - make content properly scaleable
   - max widths everywhere
   - make container div have a max width, centered

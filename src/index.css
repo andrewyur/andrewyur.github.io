@@ -38,7 +38,7 @@
 #bp > p,
 #projects .text {
 	backdrop-filter: blur(10px);
-	background-color: rgba(3, 255, 137, 0.5);
+	background-color: rgba(128, 128, 128, 0.5);
 	padding: 15px 15px 15px 15px;
 	border-radius: 10px;
 }
