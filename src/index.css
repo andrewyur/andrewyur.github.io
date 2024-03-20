@@ -23,6 +23,8 @@ body,
 }
 
 #container {
+	/*position absolute makes gorilla and other absolutely positioned elements affect height of document*/
+	position: relative;
 	overflow: hidden;
 }
 

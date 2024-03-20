@@ -16,8 +16,13 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- separate background + accent divs from text
-  - this fixes some overlapping issues and also would make parallax a lot easier
+- separate accent divs from text
+  - this fixes some overlapping issues and also would make parallax a lot
+    easier
+  - layer 1 (no z-index): background
+  - layer 2 (z-index: 1): accent divs
+  - layer 3 (z-index: 2): text + images + everything else
+- document everything so far (especially inside css)
 - fix favicon
 - make content properly scaleable
   - max widths everywhere

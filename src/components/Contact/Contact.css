@@ -1,28 +1,31 @@
 /*----------------------------------------General Formatting----------------------------------------*/
 
+#contactBg {
+	background-color: var(--contactBg);
+}
+
 #contact {
 	padding-left: 15%;
 	padding-right: 15%;
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 	width: 100%;
-	background-color: var(--contactBg);
 	position: relative;
-	z-index: 3;
+	z-index: 2;
 	display: flex;
 	flex-flow: column nowrap;
-	align-items: end;
+	align-items: flex-end;
 	gap: 5vh;
 }
 
-#contact img {
+#accent3 {
 	position: absolute;
 	/*shouldnt need a margin. why does the image have a margin?*/
 	margin: 0;
 	width: 100vw;
-	z-index: -1;
+	z-index: 1;
 	left: -25vw;
-	top: -25vh;
+	top: 380vh;
 }
 
 #contact a,
