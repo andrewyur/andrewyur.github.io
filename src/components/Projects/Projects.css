@@ -9,8 +9,8 @@
 	z-index: 2;
 	padding-left: 15%;
 	padding-right: 15%;
-	padding-top: 15vh;
-	padding-bottom: 15vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	width: 100%;
 }
 
@@ -18,35 +18,39 @@
 	position: absolute;
 	z-index: 1;
 	background-color: var(--projectsAccent);
-	width: 110vw;
-	height: 110vw;
+	width: 1600px;
+	height: 1600px;
 	border-radius: 100%;
-	top: 160vh;
-	right: -45vw;
+	top: 1200px;
+	left: 45vw;
 }
 
 #projects > *:not(h1, .accent) {
-	margin-bottom: 15vh;
+	margin-bottom: 100px;
+}
+
+#projects .text,
+#projects .text * {
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 100%;
 }
 
 /*--------------------Projects General Formatting--------------------*/
 
 #bp a,
-#bp p,
-#sp a,
-#sp p {
+#bp p {
 	position: relative;
 	z-index: 3;
 	display: inline-block;
 	font-size: 2rem;
 }
 
-/*----------Big Projects----------*/
-
 #bp {
 	display: flex;
 	flex-flow: column nowrap;
-	gap: 5vh;
+	gap: 20px;
 }
 
 #projects .bp {
@@ -64,8 +68,8 @@
 
 #projects .bp .backer {
 	border-radius: 10px;
-	background-color: rgb(249, 113, 113);
-	height: 25vh;
+	background-color: var(--projectsSubBacker);
+	height: 250px;
 	width: 55vw;
 }
 
@@ -79,57 +83,29 @@
 
 #projects .bp:nth-of-type(even) .text {
 	right: 0;
+	text-align: right;
 }
 
 #projects .bp a {
 	font-size: 3rem;
 }
 
-/*----------Small Projects----------*/
-
-#sp {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-}
-
-#projects .sp {
-	position: relative;
-}
-
-#projects .sp .text {
-	position: absolute;
-	text-align: center;
-	top: -20%;
-	right: 0;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-}
-
-#projects .sp .backer {
-	background-color: rgb(249, 113, 113);
-	border-radius: 10px;
-	height: 20vh;
-	width: 20vw;
-}
-
 /*----------------------------------------Position Specific Formatting----------------------------------------*/
 
 #projects h1 {
 	position: absolute;
-	top: -10vh;
-	left: 15vw;
+	top: -4.5rem;
+	left: 250px;
 }
 
 #projects > p:nth-of-type(1) {
 	float: right;
-	width: 35vw;
+	width: 500px;
 }
 
 #bp {
 	float: center;
-	width: 70vw;
+	width: 100%;
 }
 
 #bp > p {
@@ -139,10 +115,4 @@
 #projects > p:nth-of-type(2) {
 	float: left;
 	width: 40vw;
-	margin-left: 15vh;
-}
-
-#sp {
-	float: center;
-	width: 70vw;
 }

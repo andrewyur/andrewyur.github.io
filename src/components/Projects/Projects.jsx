@@ -14,18 +14,6 @@ function BigProject(props) {
 	);
 }
 
-function SmallProject(props) {
-	return (
-		<div className="sp">
-			<div className="text">
-				<a href=".">{props.title}</a>
-				<p>{props.desc}</p>
-			</div>
-			<div className="backer" />
-		</div>
-	);
-}
-
 export function Projects() {
 	return (
 		<>
@@ -35,14 +23,8 @@ export function Projects() {
 					{ProjectsContent.paragraph1}
 					<div id="bp">
 						<BigProject {...ProjectsContent.bigproject1} />
-						<p>and also this one:</p>
+						<p>&</p>
 						<BigProject {...ProjectsContent.bigproject2} />
-					</div>
-					{ProjectsContent.paragraph2}
-					<div id="sp">
-						<SmallProject {...ProjectsContent.smallproject1} />
-						<SmallProject {...ProjectsContent.smallproject2} />
-						<SmallProject {...ProjectsContent.smallproject3} />
 					</div>
 				</div>
 			</div>

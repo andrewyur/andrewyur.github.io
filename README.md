@@ -16,20 +16,20 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- consolidate colors again, maybe into separate css file
 - make content properly scaleable
-  - max widths everywhere
-  - make container div have a max width, centered
-  - convert vw to %
   - make font size scale with container div
   - look up tips for making this look good, because this is important!
+- condense about me content into one container div
+- change to a unique font
+- refactor html element ids
+- sort out projects layout
 - document everything so far (especially inside css)
-- use spline & webflow to make 3d model background for project images
 - animations for accent divs
 - tons of hover effects
 - smooth scrolling
 - set up separate pages for blog posts about projects and other stuff
 - hovering over pictures changes the picture being displayed
+- use spline & webflow to make 3d model background for project images
 
 Potential features:
 

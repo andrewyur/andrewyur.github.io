@@ -2,37 +2,31 @@
 
 #abouthimBg {
 	background-color: var(--abouthimBg);
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 #abouthim {
 	position: relative;
 	z-index: 2;
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-top: 15vh;
-	padding-bottom: 15vh;
-	width: 100%;
+	margin: auto;
+	max-width: 1100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 #accent1 {
 	background-color: var(--abouthimAccent);
-	width: 100vw;
-	height: 130vh;
+	width: 4000px;
+	height: 1000px;
 
 	position: absolute;
-	left: -40vw;
-	top: 35vh;
+	right: 40vw;
+	top: 50px;
 	z-index: 1;
 
 	transform: rotate(7.64deg);
 }
-
-#abouthim h1 {
-	position: absolute;
-	top: 10vh;
-	left: 20vw;
-}
-
 #abouthim img,
 #abouthim div,
 #accent1 {
@@ -43,97 +37,75 @@
 	text-decoration: underline;
 }
 
-#abouthim > *:not(h1, .accent) {
-	margin-bottom: 15vh;
+#abouthim > * {
+	margin-bottom: 100px;
 }
 
 /*--------------------Image Wrapper Formatting--------------------*/
 
 #abouthim .backer {
-	background-color: var(--abouthimBacker);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	backdrop-filter: blur(10px);
+	height: fit-content;
+	width: fit-content;
+	padding: 35px;
 }
 
 /*----------------------------------------Position Specific Formatting----------------------------------------*/
 
+#abouthim h1 {
+	position: relative;
+	left: 15%;
+	margin-bottom: 35px;
+	transform: rotate(7.64deg);
+}
+
 #abouthim .container:nth-of-type(1) {
-	margin-top: 25vh;
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: space-around;
+
+	transform: rotate(7.64deg);
 }
 
 #abouthim .container:nth-of-type(1) p {
-	margin-top: 10vh;
-	width: 40vw;
-}
-
-#abouthim .container:nth-of-type(1) .backer {
-	width: 23vw;
-	height: 50vh;
-	transform: rotate(-4.5deg);
+	width: 55%;
 }
 
 #abouthim .container:nth-of-type(1) .backer img {
-	width: 15vw;
-	transform: rotate(1.5deg);
+	width: 200px;
 }
 
 #abouthim .container:nth-of-type(2) {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	transform: rotate(7.64deg);
 }
 
 #abouthim .container:nth-of-type(2) .subcontainer {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
-	gap: 5vh;
+	gap: 50px;
 }
 
 #abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) {
 	align-items: center;
-	margin-top: -7vh;
-}
-
-#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) .backer {
-	width: 25vw;
-	height: 40vh;
-	transform: rotate(3.8deg);
 }
 
 #abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) .backer img {
-	transform: rotate(2deg);
-	width: 20vw;
+	width: 350px;
 }
 
 #abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(1) p {
-	width: 35vw;
-}
-
-#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) {
-	position: relative;
-	z-index: 100;
-	margin-bottom: -10vh;
+	width: 450px;
 }
 
 #abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) p {
-	width: 20vw;
-}
-
-#abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) .backer {
-	transform: rotate(1deg);
-	height: 35vh;
-	width: 18vw;
+	width: 290px;
 }
 
 #abouthim .container:nth-of-type(2) .subcontainer:nth-of-type(2) .backer img {
-	width: 14vw;
-	transform: rotate(-2deg);
+	width: 200px;
 }
