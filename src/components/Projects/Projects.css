@@ -60,6 +60,9 @@
 #projects .bp .text {
 	position: absolute;
 	top: 40%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 #projects .bp .text a {

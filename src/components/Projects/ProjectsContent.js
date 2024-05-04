@@ -13,12 +13,12 @@ export const ProjectsContent = {
 				Jacobs
 			</a>{" "}
 			he is doing this summer, he doesn&apos;t have a lot of time, but he is
-			pretty proud of this one:
+			pretty proud of these ones:
 		</p>
 	),
 	bigproject1: {
 		title: "Portfolio Website",
-		desc: "with React.js, Webflow+Spline, & GitHub Pages",
+		desc: "with React.js & GitHub Pages",
 	},
 	bigproject2: {
 		title: "Discord Poetry Bot",
