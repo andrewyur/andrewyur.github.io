@@ -16,21 +16,22 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- make content properly scaleable
-  - make font size scale with container div
-  - look up tips for making this look good, because this is important!
-- change to a unique font
-- refactor html element ids
+- change rem according to vw
+- parallax for accent divs + background
 - fix image flickering when loading
-- document everything so far (especially inside css)
 - animations for accent divs
 - tons of hover effects
-- set up separate pages for blog posts about projects and other stuff
-- hovering over pictures changes the picture being displayed
-- use spline & webflow to make 3d model background for project images
+- change what picture is being displayed on each render, make pictures span a link to pictures page
+- make page format for blog post about projects
+- make picture gallery page for pictures i like
+- figure out resume viewing link
+- refactor ids and classes and document css (should have used tailwind 🤦‍♂️)
+- reevaluate font choice
 
 Potential features:
 
 - parallax
+- use spline & webflow to make 3d model background for project images
 - hovering over hoboken and nashua show maps
 - SEO and web indexing stuff
+- custom domain name (ayuro.rodeo) & hosting on aws
