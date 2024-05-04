@@ -83,21 +83,18 @@
 
 html,
 body,
+main,
 #root {
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-#root {
+main {
+	position: fixed;
+	/* position: absolute; */
 	overflow: hidden;
-	position: relative;
 }
-
-/* main {
-   position: fixed;
-   
-} */
 
 ::-webkit-scrollbar {
 	width: 0;

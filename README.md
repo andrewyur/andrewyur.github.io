@@ -19,14 +19,12 @@ Current Agenda:
 - make content properly scaleable
   - make font size scale with container div
   - look up tips for making this look good, because this is important!
-- condense about me content into one container div
 - change to a unique font
 - refactor html element ids
-- sort out projects layout
+- fix image flickering when loading
 - document everything so far (especially inside css)
 - animations for accent divs
 - tons of hover effects
-- smooth scrolling
 - set up separate pages for blog posts about projects and other stuff
 - hovering over pictures changes the picture being displayed
 - use spline & webflow to make 3d model background for project images

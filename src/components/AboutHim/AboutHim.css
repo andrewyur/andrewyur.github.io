@@ -94,18 +94,21 @@
 	width: 600px;
 }
 #abouthim .container .subcontainer:nth-of-type(1) .backer:nth-of-type(1) img {
-	width: 350px;
+	height: 300px;
+	width: auto;
 }
 #abouthim .container .subcontainer:nth-of-type(1) p:nth-of-type(2) {
 	width: 450px;
 }
 
 #abouthim .container .subcontainer:nth-of-type(2) .backer:nth-of-type(1) img {
-	width: 200px;
+	height: 250px;
+	width: auto;
 }
 #abouthim .container .subcontainer:nth-of-type(2) p:nth-of-type(1) {
 	width: 100%;
 }
 #abouthim .container .subcontainer:nth-of-type(2) .backer:nth-of-type(2) img {
-	width: 200px;
+	height: 200px;
+	width: auto;
 }
