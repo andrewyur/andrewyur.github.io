@@ -7,7 +7,9 @@
 	--projectsBg: #cff5ff;
 	--projectsAccent: #483eff;
 	--projectsSubBacker: #f97171;
+	--projectsSubBackerHover: rgba(249, 113, 113, 0.85);
 	--projectsBacker: rgba(171, 139, 139, 0.5);
+	--projectsBackerHover: rgba(171, 139, 139, 0.9);
 	--contactAccent: #ff0000;
 	--contactBg: #8c986d;
 	--contactBacker: rgba(255, 48, 48, 0.5);

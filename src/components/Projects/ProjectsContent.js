@@ -19,10 +19,12 @@ export const ProjectsContent = {
 	bigproject1: {
 		title: "Portfolio Website",
 		desc: "with React.js & GitHub Pages",
+		href: "portfolio-website",
 	},
 	bigproject2: {
 		title: "Discord Poetry Bot",
-		desc: "with OpenAI API, Docker, & Error Logging",
+		desc: "with OpenAI API & Docker",
+		href: "poetry-bot",
 	},
 	paragraph2: (
 		<p>
@@ -38,16 +40,4 @@ export const ProjectsContent = {
 			, and here are some of his small projects he is most fond of.
 		</p>
 	),
-	smallproject1: {
-		title: "25 + 5 Clock",
-		desc: "with React.js",
-	},
-	smallproject2: {
-		title: "Calculator app",
-		desc: "with React.js",
-	},
-	smallproject3: {
-		title: "Drum machine",
-		desc: "with React.js",
-	},
 };

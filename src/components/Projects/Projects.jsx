@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Projects.css";
 import { ProjectsContent } from "./ProjectsContent";
 
 function BigProject(props) {
+	const bpRef = useRef();
+
+	function onMouseEnter() {
+		bpRef.current.className = "bp hover";
+	}
+
+	function onMouseLeave() {
+		bpRef.current.className = "bp";
+	}
+
 	return (
-		<div className="bp">
+		<div
+			className="bp"
+			ref={bpRef}
+			onMouseEnter={onMouseEnter}
+			onMouseLeave={onMouseLeave}
+		>
 			<div className="text">
-				<a href=".">{props.title}</a>
+				<a href={`/p/${props.href}`}>{props.title}</a>
 				<p>{props.desc}</p>
 			</div>
 			<div className="backer" />

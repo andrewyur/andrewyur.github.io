@@ -16,10 +16,8 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- parallax for accent divs + background
-- fix image flickering when loading
-- animations for accent divs
-- tons of hover effects
+- switch to react-router for multiple pages
+- tons of hover effects (only on links, for now...)
 - change what picture is being displayed on each render, make pictures span a link to pictures page
 - make page format for blog post about projects
 - make picture gallery page for pictures i like
@@ -33,4 +31,3 @@ Potential features:
 - use spline & webflow to make 3d model background for project images
 - hovering over hoboken and nashua show maps
 - SEO and web indexing stuff
-- custom domain name (ayuro.rodeo) & hosting on aws
