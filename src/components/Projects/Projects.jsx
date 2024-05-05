@@ -18,7 +18,7 @@ export function Projects() {
 	return (
 		<>
 			<div id="projectsBg">
-				<div id="projects">
+				<div id="projects" className="layer1">
 					<h1>Projects</h1>
 					{ProjectsContent.paragraph1}
 					<div id="bp">
@@ -28,7 +28,7 @@ export function Projects() {
 					</div>
 				</div>
 			</div>
-			<div id="accent2" />
+			<div id="accent2" className="layer2" />
 		</>
 	);
 }

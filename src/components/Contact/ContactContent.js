@@ -26,6 +26,11 @@ export const ContactContent = {
 		</p>
 	),
 	image: (
-		<img id="accent3" src="/banner source hd.png" alt="doodle of a gorilla" />
+		<img
+			id="accent3"
+			src="/banner source hd.png"
+			className="layer2"
+			alt="doodle of a gorilla"
+		/>
 	),
 };

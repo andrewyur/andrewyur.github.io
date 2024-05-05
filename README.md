@@ -16,7 +16,6 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- change rem according to vw
 - parallax for accent divs + background
 - fix image flickering when loading
 - animations for accent divs
@@ -27,10 +26,10 @@ Current Agenda:
 - figure out resume viewing link
 - refactor ids and classes and document css (should have used tailwind 🤦‍♂️)
 - reevaluate font choice
+- change rem according to vw
 
 Potential features:
 
-- parallax
 - use spline & webflow to make 3d model background for project images
 - hovering over hoboken and nashua show maps
 - SEO and web indexing stuff

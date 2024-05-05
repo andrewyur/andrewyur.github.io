@@ -10,7 +10,7 @@ export function AboutHim() {
 	return (
 		<>
 			<div id="abouthimBg">
-				<div id="abouthim">
+				<div id="abouthim" className="layer1">
 					<h1>About Him</h1>
 					<div className="container">
 						<div className="subcontainer">
@@ -26,7 +26,7 @@ export function AboutHim() {
 					</div>
 				</div>
 			</div>
-			<div id="accent1" />
+			<div id="accent1" className="layer2" />
 		</>
 	);
 }
