@@ -16,18 +16,21 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- switch to react-router for multiple pages
-- tons of hover effects (only on links, for now...)
-- change what picture is being displayed on each render, make pictures span a link to pictures page
-- make page format for blog post about projects
+- create & style project post template
+- create & style project list page
+- create & style error page
 - make picture gallery page for pictures i like
-- figure out resume viewing link
-- refactor ids and classes and document css (should have used tailwind 🤦‍♂️)
-- reevaluate font choice
-- change rem according to vw
+- finishing touches to main Page
+  - more hover effects (only on links, for now...)
+  - change what picture is being displayed on each render, make pictures span a link to pictures page
+  - figure out resume viewing link
+  - refactor ids and classes and document css (should have used tailwind 🤦‍♂️)
+  - reevaluate font choice
+  - change rem according to vw
 
 Potential features:
 
 - use spline & webflow to make 3d model background for project images
 - hovering over hoboken and nashua show maps
 - SEO and web indexing stuff
+- move to aws and get custom domain name (? probably not, but we will see...)

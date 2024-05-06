@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+// import { Link } from "react-router-dom";
 import "./Projects.css";
 import { ProjectsContent } from "./ProjectsContent";
 
@@ -21,6 +22,8 @@ function BigProject(props) {
 			onMouseLeave={onMouseLeave}
 		>
 			<div className="text">
+				{/* This should be a Link element but MainPage errors when trying to use 
+            getClientBoundingRect on Link Elements */}
 				<a href={`/p/${props.href}`}>{props.title}</a>
 				<p>{props.desc}</p>
 			</div>
