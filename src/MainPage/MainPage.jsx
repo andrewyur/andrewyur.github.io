@@ -18,6 +18,7 @@ export function MainPage() {
 
 	let scrollPosition = 0;
 
+	// easing value: low == fast, high == slow
 	function linearInterpolation(x1, x2, easingValue) {
 		return (1 - easingValue) * x1 + easingValue * x2;
 	}
@@ -44,9 +45,12 @@ export function MainPage() {
 	};
 
 	const render = () => {
-		mainOffset = linearInterpolation(mainOffset, scrollPosition, 0.17);
-		layer1Offset = linearInterpolation(layer1Offset, scrollPosition, 0.16);
-		layer2Offset = linearInterpolation(layer2Offset, scrollPosition, 0.15);
+		//base page movement
+		mainOffset = linearInterpolation(mainOffset, scrollPosition, 0.14);
+		//text
+		layer1Offset = linearInterpolation(layer1Offset, scrollPosition, 0.11);
+		//accents
+		layer2Offset = linearInterpolation(layer2Offset, scrollPosition, 0.16);
 
 		layer1.forEach((e) => {
 			e.style.transform = `translateY(-${
