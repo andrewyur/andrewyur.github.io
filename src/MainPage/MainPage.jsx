@@ -31,6 +31,7 @@ export function MainPage() {
 		});
 		resizeObserver.observe(appRef.current);
 		window.requestAnimationFrame(render);
+		return () => resizeObserver.disconnect();
 	}, []);
 
 	useEffect(() => {
@@ -69,10 +70,11 @@ export function MainPage() {
 				}px)`;
 			}
 		});
-		appRef.current.style.transform = `translateY(-${
-			Math.floor(mainOffset * 100) / 100
-		}px)`;
-
+		if (appRef.current) {
+			appRef.current.style.transform = `translateY(-${
+				Math.floor(mainOffset * 100) / 100
+			}px)`;
+		}
 		window.requestAnimationFrame(render);
 	};
 

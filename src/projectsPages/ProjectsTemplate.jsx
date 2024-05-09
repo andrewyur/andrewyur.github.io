@@ -9,7 +9,7 @@ export function ProjectsTemplate(props) {
 					<a href="/">Main Page</a>
 				</div>
 				<div className="navLinkWrapper">
-					<a href="/p">Other Projects</a>
+					<a href="/#p">Other Projects</a>
 				</div>
 			</nav>
 			<div id="infoDiv">

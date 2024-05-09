@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import { MainPage } from "./MainPage/MainPage";
 import { Error } from "./Error";
@@ -8,7 +8,12 @@ import { ProjectsList } from "./projectsPages/ProjectsList";
 import { PoetryBot } from "./projectsPages/PoetryBot/PoetryBot";
 import { PortfolioWebsite } from "./projectsPages/PortfolioWebsite/PortfolioWebsite";
 
-const router = createBrowserRouter([
+window.onhashchange = () => {
+	window.scrollTo(0, 0);
+	window.location.reload();
+};
+
+const router = createHashRouter([
 	{
 		path: "/",
 		element: <MainPage />,
