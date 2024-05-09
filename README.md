@@ -16,12 +16,9 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- create & style project post template
-- create & style project list page
 - create & style error page
-- make picture gallery page for pictures i like
 - finishing touches to main Page
-  - more hover effects (only on links, for now...)
+  - more hover effects (only on links and buttons, for now...)
   - change what picture is being displayed on each render, make pictures span a link to pictures page
   - figure out resume viewing link
   - refactor ids and classes and document css (should have used tailwind 🤦‍♂️)

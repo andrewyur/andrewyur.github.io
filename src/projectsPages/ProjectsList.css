@@ -1,6 +1,8 @@
 :root {
 	--background-color: #fff5e0;
+	--card-color: #f7ebd2;
 	--accent-color: orangered;
+	--backer-color: rgba(171, 139, 139, 0.5);
 }
 
 #root {
@@ -10,7 +12,7 @@
 	background-color: var(--background-color);
 }
 
-#project-template nav {
+#projects-list nav {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -24,7 +26,7 @@
 	writing-mode: vertical-lr;
 }
 
-#project-template .navLinkWrapper {
+#projects-list .navLinkWrapper {
 	background-color: var(--accent-color);
 	width: fit-content;
 	height: fit-content;
@@ -32,9 +34,9 @@
 	padding-bottom: 10px;
 }
 
-#project-template nav a,
-#project-template nav a:active,
-#project-template nav a:visited {
+#projects-list nav a,
+#projects-list nav a:active,
+#projects-list nav a:visited {
 	font-family: "EB Garamond", serif;
 	font-weight: 500;
 	display: inline-block;
@@ -49,16 +51,16 @@
 	transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-#project-template nav a:hover {
+#projects-list nav a:hover {
 	transform: scaleX(2) translateX(-5px);
 }
 
-#project-template {
+#projects-list {
 	position: static;
 	width: 100%;
 	max-width: 1100px;
-	margin-top: 100px;
-	margin-bottom: 130px;
+	padding-top: 100px;
+	padding-bottom: 130px;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column;
@@ -66,58 +68,60 @@
 	min-height: 100vh;
 }
 
-#project-template * {
+#projects-list * {
 	user-select: text;
 }
 
-#project-template h1 {
+#projects-list h1 {
 	margin-bottom: 20px;
 }
 
-#project-template p {
-	line-height: 140%;
-	font-family: "Cabin";
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-#project-template h2 {
+#projects-list h2 {
+	color: #000;
 	font-family: "EB Garamond";
-	margin-top: 50px;
-	margin-bottom: 40px;
 	font-size: 4rem;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-#project-template hr {
+#projects-list .projectsLink:hover h2 {
+	padding: 20px;
+}
+
+#projects-list p {
+	color: black;
+	transform: skewX(-10deg);
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	width: 100%;
+}
+
+#projectsContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#projects-list hr {
 	width: 40%;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 60px;
 }
 
-#infoDiv {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	justify-content: space-between;
-	transform: skewX(-10deg);
+.projectsLink {
 	width: 100%;
-	padding-left: 5px;
-}
-
-#project-template img {
-	position: relative;
-	margin: auto;
-	margin-top: 10px;
-}
-
-#project-template .caption {
-	width: 100%;
-	text-align: center;
-	font-size: 1.2rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	height: 150px;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	gap: 20px;
+	align-items: center;
 }
