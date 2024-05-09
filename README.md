@@ -16,10 +16,11 @@ Since this is going to be a static website, the styling is going to play a big p
 
 Current Agenda:
 
-- create & style error page
-- find a way to test on different browsers on different systems
-- error with fonts in safari
-- styling on ipad
+- condense reused styles into an index.css, rename current index.css
+- environment testing
+  - find a way to test on different browsers on different systems
+  - error with fonts in safari
+  - styling on ipad
 - finishing touches to main Page
   - more hover effects (only on links and buttons, for now...)
   - change what picture is being displayed on each render, make pictures span a link to pictures page

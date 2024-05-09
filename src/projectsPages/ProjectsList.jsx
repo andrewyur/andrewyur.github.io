@@ -8,9 +8,6 @@ export function ProjectsList() {
 				<div className="navLinkWrapper">
 					<a href="/">Main Page</a>
 				</div>
-				<div className="navLinkWrapper">
-					<a href="/#p">Other Projects</a>
-				</div>
 			</nav>
 			<h1>Projects</h1>
 			<hr />
