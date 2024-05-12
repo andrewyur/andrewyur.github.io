@@ -13,6 +13,9 @@
 	max-width: 1100px;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #accent1 {
@@ -66,7 +69,7 @@
 } */
 
 #abouthim .container {
-	width: 100%;
+	width: 80%;
 	display: flex;
 	flex-flow: row nowrap;
 	transform: rotate(7.64deg);
@@ -83,16 +86,18 @@
 
 #abouthim .container .subcontainer:nth-of-type(1) {
 	align-items: flex-end;
+	width: auto;
 }
 #abouthim .container .subcontainer:nth-of-type(2) {
 	align-items: flex-start;
+	width: auto;
 }
 
 #abouthim .container .subcontainer:nth-of-type(1) p:nth-of-type(1) {
-	width: 600px;
+	width: 120%;
 }
 #abouthim .container .subcontainer:nth-of-type(1) .backer:nth-of-type(1) img {
-	height: 300px;
+	max-height: 300px;
 	width: auto;
 }
 #abouthim .container .subcontainer:nth-of-type(1) p:nth-of-type(2) {
@@ -100,13 +105,13 @@
 }
 
 #abouthim .container .subcontainer:nth-of-type(2) .backer:nth-of-type(1) img {
-	height: 250px;
+	max-height: 250px;
 	width: auto;
 }
 #abouthim .container .subcontainer:nth-of-type(2) p:nth-of-type(1) {
 	width: 100%;
 }
 #abouthim .container .subcontainer:nth-of-type(2) .backer:nth-of-type(2) img {
-	height: 200px;
+	max-height: 200px;
 	width: auto;
 }

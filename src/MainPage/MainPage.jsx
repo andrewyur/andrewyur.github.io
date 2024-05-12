@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useLayoutEffect } from "react";
-import "./index.css";
+import "./MainPage.css";
 import { AboutHim } from "./AboutHim/AboutHim";
 import { Header } from "./Header";
 import { Projects } from "./Projects/Projects";
@@ -45,6 +45,8 @@ export function MainPage() {
 		scrollPosition = window.scrollY;
 	};
 
+	// this is laggy on some machines, and very laggy on mobile
+	// will have to optimize when making mobile view
 	const render = () => {
 		//base page movement
 		mainOffset = linearInterpolation(mainOffset, scrollPosition, 0.14);
