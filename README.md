@@ -17,12 +17,11 @@ Since this is going to be a static website, the styling is going to play a big p
 Current Agenda:
 
 - finishing touches to main Page
-  - more hover effects (only on links and buttons, for now...)
-  - change what picture is being displayed on each render, make pictures span a link to pictures page
   - figure out resume viewing link
 
 Future Roadmap:
 
+- dynamic layout for #abouthim, which accomadates different sizes of pictures
 - mobile view, proper scaling for #abouthim, font scaling
 - more hover effects, optimization of parallax
 - use spline & webflow to make 3d model background for project images

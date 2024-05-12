@@ -92,4 +92,9 @@ a:visited {
 		right: 0;
 		font-size: 3rem;
 	}
+
+	#mobile h2::after {
+		content: "Sorry, I didn't optimize this content for mobile. Please view on a \
+				larger screen...";
+	}
 }

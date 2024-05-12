@@ -1,5 +1,11 @@
 import React from "react";
 
+/*eslint react/jsx-key: 0*/
+let images = [
+	<img src="/IMG_5438.JPG" alt="some lights and a window" />,
+	<img src="/skyline.jpg" alt="the new york city skyline" />,
+];
+
 export const AboutHimContent = {
 	paragraph1: (
 		<p>
@@ -39,7 +45,7 @@ export const AboutHimContent = {
 		</p>
 	),
 	image2: {
-		image: <img src="/IMG_5438.JPG" alt="some lights and a window"></img>,
+		image: images[Math.floor(Math.random() * images.length)],
 	},
 	paragraph3: (
 		<p>
