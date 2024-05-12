@@ -9,7 +9,11 @@ export const ContactContent = {
 	),
 	paragraph2: (
 		<p>
-			If you would like to view his resume, <a href=".">please click here</a>.
+			If you would like to view his resume,{" "}
+			<a href="andrew_yurovchak_resume_v0.pdf" target="_blank" rel="noreferrer">
+				please click here
+			</a>
+			.
 		</p>
 	),
 	paragraph3: (

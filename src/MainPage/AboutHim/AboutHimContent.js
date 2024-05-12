@@ -38,10 +38,9 @@ export const AboutHimContent = {
 	image1: { image: <img src="/IMG_0485.JPG" alt="andrew yurovchak"></img> },
 	paragraph2: (
 		<p>
-			He enjoys going for walks, taking in the beautiful atmosphere of{" "}
-			<span id="hoboken">Hoboken, NJ</span>, where he resides during the school
-			year, and <span id="nashua">Nashua, NH</span>, where he lives in the
-			summer.
+			He enjoys going for walks, taking in the beautiful atmosphere of Hoboken,
+			NJ, where he resides during the school year, and Nashua, NH, where he
+			lives in the summer.
 		</p>
 	),
 	image2: {
@@ -49,10 +48,8 @@ export const AboutHimContent = {
 	},
 	paragraph3: (
 		<p>
-			He listens to a lot of music, and likes to take{" "}
-			<span id="pictures">pictures</span> and doodle on{" "}
-			<span id="doodles">MS Paint</span>. He also folds origami and plays pool
-			when he has time.
+			He listens to a lot of music, and likes to take pictures and doodle on MS
+			Paint. He also folds origami and plays pool when he has time.
 		</p>
 	),
 	image3: { image: <img src="/pfp2hd.png" alt="doodle of a monkey"></img> },
