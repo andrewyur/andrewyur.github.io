@@ -84,6 +84,17 @@ export function PortfolioWebsite() {
 				Overall, I do think this was an enjoyable and rewarding experience, even
 				if it did take a bit long for my liking.
 			</p>
+			<p style={{ textAlign: "center", width: "100%" }}>
+				The repo can be found at{" "}
+				<a
+					href="https://github.com/andrewyur/andrewyur.github.io"
+					target="_blank"
+					rel="noreferrer"
+				>
+					https://github.com/andrewyur/andrewyur.github.io
+				</a>
+				.
+			</p>
 		</ProjectsTemplate>
 	);
 }

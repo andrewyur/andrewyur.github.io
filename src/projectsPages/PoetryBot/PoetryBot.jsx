@@ -51,6 +51,17 @@ export function PoetryBot() {
 				wrapped every possible point of failure in a try catch statement, then
 				called it a day.
 			</p>
+			<p style={{ textAlign: "center", width: "100%" }}>
+				The repo can be found at{" "}
+				<a
+					href="https://github.com/andrewyur/poetry-bot"
+					target="_blank"
+					rel="noreferrer"
+				>
+					https://github.com/andrewyur/poetry-bot
+				</a>
+				.
+			</p>
 		</ProjectsTemplate>
 	);
 }
