@@ -9,8 +9,9 @@ let images = [
 export const AboutHimContent = {
 	paragraph1: (
 		<p>
-			Andrew Yurovchak is currently a sophomore at Stevens Institute for
-			technology, studying Computer Science. He is a developer for the{" "}
+			Andrew Yurovchak is currently a Junior at Stevens Institute for
+			technology, studying Computer Science. He is the Head of Development &
+			Risk teams at the{" "}
 			<a
 				href="https://www.stevens.edu/school-business/student-managed-investment-fund"
 				target="_blank"
@@ -18,8 +19,8 @@ export const AboutHimContent = {
 			>
 				Stevens Student Managed Investment Fund
 			</a>
-			, where he works with a small team to create web tools for the equity
-			analysts. He is a member of the{" "}
+			, where he works with a small team to create web tools and data
+			visualizations. He is a member of the{" "}
 			<a
 				href="https://stevensducks.com/sports/mens-fencing"
 				target="_blank"
@@ -27,8 +28,8 @@ export const AboutHimContent = {
 			>
 				Stevens Div. III Fencing Team
 			</a>
-			, for which he trains for ~10hrs a week, and travels often. He is the
-			secretary for{" "}
+			, for which he trains for ~10hrs a week, and travels often. He is also a
+			member of the{" "}
 			<a href="https://lodge804.com/Home.html" target="_blank" rel="noreferrer">
 				Chi Psi Fraternity at Stevens
 			</a>

@@ -12,6 +12,10 @@ export function ProjectsList() {
 			<h1>Projects</h1>
 			<hr />
 			<div id="projectsContainer">
+				<a href="/#p/qart-encoder" className="projectsLink">
+					<p>May 2024</p>
+					<h2>QArt Encoder</h2>
+				</a>
 				<a href="/#p/portfolio-website" className="projectsLink">
 					<p>May 2024</p>
 					<h2>Portfolio Website</h2>

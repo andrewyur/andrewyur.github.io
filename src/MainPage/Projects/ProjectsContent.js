@@ -12,32 +12,18 @@ export const ProjectsContent = {
 			>
 				Jacobs
 			</a>{" "}
-			he is doing this summer, he doesn&apos;t have a lot of time, but he is
+			he is doing this summer, he hasn&apos;t had a lot of time, but he is
 			pretty proud of these ones:
 		</p>
 	),
 	bigproject1: {
+		title: "QArt Encoder",
+		desc: "with Rust & Cargo",
+		href: "qart-encoder",
+	},
+	bigproject2: {
 		title: "Portfolio Website",
 		desc: "with React.js & GitHub Pages",
 		href: "portfolio-website",
 	},
-	bigproject2: {
-		title: "Discord Poetry Bot",
-		desc: "with OpenAI API & Docker",
-		href: "poetry-bot",
-	},
-	paragraph2: (
-		<p>
-			He also taught himself how to make websites over the summer of 2023 with
-			the help of{" "}
-			<a
-				href="https://www.freecodecamp.org/ayuro"
-				target="_blank"
-				rel="noreferrer"
-			>
-				FreeCodeCamp
-			</a>
-			, and here are some of his small projects he is most fond of.
-		</p>
-	),
 };

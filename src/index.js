@@ -8,6 +8,7 @@ import { Error } from "./Error";
 import { ProjectsList } from "./projectsPages/ProjectsList";
 import { PoetryBot } from "./projectsPages/PoetryBot/PoetryBot";
 import { PortfolioWebsite } from "./projectsPages/PortfolioWebsite/PortfolioWebsite";
+import { QArtEncoder } from "./projectsPages/QArtEncoder/PortfolioWebsite";
 
 window.onhashchange = () => {
 	window.scrollTo(0, 0);
@@ -31,6 +32,10 @@ const router = createHashRouter([
 	{
 		path: "/p/portfolio-website",
 		element: <PortfolioWebsite />,
+	},
+	{
+		path: "/p/qart-encoder",
+		element: <QArtEncoder />,
 	},
 ]);
 
