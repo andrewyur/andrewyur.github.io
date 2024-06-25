@@ -6,10 +6,10 @@ export function ProjectsTemplate(props) {
 		<main id="project-template">
 			<nav>
 				<div className="navLinkWrapper">
-					<a href="/">Main Page</a>
+					<a href="/#p">Other Projects</a>
 				</div>
 				<div className="navLinkWrapper">
-					<a href="/#p">Other Projects</a>
+					<a href="/">Main Page</a>
 				</div>
 			</nav>
 			<div id="infoDiv">

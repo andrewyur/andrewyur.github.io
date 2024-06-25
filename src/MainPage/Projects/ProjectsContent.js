@@ -3,8 +3,7 @@ import React from "react";
 export const ProjectsContent = {
 	paragraph1: (
 		<p>
-			Andrew doesn&apos;t really have a ton of projects to display. With all the
-			activities he does, and a software engineering internship at{" "}
+			With all the activities he does, and a Software Engineering Internship at{" "}
 			<a
 				href="https://www.jacobs.com/technology/aviation-suite"
 				target="_blank"
@@ -12,8 +11,9 @@ export const ProjectsContent = {
 			>
 				Jacobs
 			</a>{" "}
-			he is doing this summer, he hasn&apos;t had a lot of time, but he is
-			pretty proud of these ones:
+			he is doing this summer, he hasn&apos;t had a lot of time to work on his
+			personal projects, but he has managed to make a couple ones which he is
+			pretty proud of:
 		</p>
 	),
 	bigproject1: {

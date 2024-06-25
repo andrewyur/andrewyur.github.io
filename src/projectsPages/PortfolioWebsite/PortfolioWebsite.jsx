@@ -6,7 +6,7 @@ export function PortfolioWebsite() {
 		<ProjectsTemplate title="Portfolio Website" date="May 2024">
 			<p>
 				A portfolio website is something that nearly every developer has, and is
-				something that i have been wanting to create ever since I learned how to
+				something that I had been wanting to create ever since I learned how to
 				make basic static webpages, which was almost a year ago. However, I tend
 				to be a bit of a perfectionist when it comes to personal projects, which
 				is really bad if you ever want a working product in a reasonable amount
@@ -18,23 +18,23 @@ export function PortfolioWebsite() {
 				This is actually my second attempt at a portfolio website. After working
 				on it obsessively almost every day for about a month, I started to feel
 				burnout, and when schoolwork started picking up, I decided to stop
-				working on it. It was unorganized and badly planned, and even though I
-				have the same amount of experience in creative web design as I do now,
-				it was pretty weird looking. I had no idea how to make it responsive to
-				the screen size, nor did I have even the remotest idea on how to build
-				and host it.
+				working on it entirely. It was unorganized and badly planned, and even
+				though I have the same amount of experience in creative web design as I
+				do now, it was pretty weird looking. I had no idea how to make it
+				responsive to the screen size, nor did I have even the remotest idea on
+				how to build and host it.
 			</p>
 			<img src="/old portfolio website.png" style={{ width: "600px" }} />
 			<p className="caption">an image of my old portfolio website</p>{" "}
 			<p>
 				In the spring of 2024, I started working as a developer for SSMIF, and
 				there I learned a lot about how to be a productive web developer, not
-				just a designer. When I had the time, I decided to have another go at
-				the portfolio website. This time, to avoid burnout, I decided to focus
-				on adding samll features in a managable way. One of the first things I
-				started with was creating a project base that I could easily deploy to
-				github pages, and I think that being able to see the changes I made live
-				on the web really helped me keep going with this project.
+				just a designer. As schoolwork wound down, I decided to have another go
+				at the portfolio website. This time, to avoid burnout, I decided to
+				focus on adding small features in a managable way. One of the first
+				things I started with was creating a project base that I could easily
+				deploy to github pages, and I think that being able to see the changes I
+				made live on the web really helped me keep going with this project.
 			</p>
 			<h2>Technical Details</h2>
 			<p>
@@ -46,6 +46,13 @@ export function PortfolioWebsite() {
 				after going through the process of making a working website, I decided
 				that that that would have to wait. For the routing, I used react-router,
 				which was really easy to pick up and integrate into my existing project.
+				However, due to the nature of github pages, displaying multiple pages
+				meant I had to use the hash router, which shows different pages to the
+				user depending on what url fragment they are pointed to. This was
+				heavily discouraged by the react-router docs, and gives me a sense of
+				unease. Eventually, I will have my own server or AWS instance for
+				hosting my personal projects, and I will have to move this website over
+				when it happens.
 			</p>
 			<p>
 				One of the things I am most proud of in this project is the smooth
@@ -58,9 +65,9 @@ export function PortfolioWebsite() {
 			<p>
 				I did originally have a Figma page for this website, but making an
 				initial design and actually creating it are two different stories, at
-				least when this was your first time using figma. The design I had
-				originally made went through a lot of changes, and the final product
-				looks very different from what I had planned it to be.
+				least on your first time using figma. The design I had originally made
+				went through a lot of changes, and the final product looks very
+				different from what I had planned it to be.
 			</p>
 			<img src="/figma.png" style={{ width: "600px" }} />
 			<p className="caption">

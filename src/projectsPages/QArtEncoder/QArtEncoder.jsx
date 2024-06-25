@@ -3,7 +3,7 @@ import { ProjectsTemplate } from "../ProjectsTemplate";
 
 export function QArtEncoder() {
 	return (
-		<ProjectsTemplate title="QArtEncoder" date="May 2024">
+		<ProjectsTemplate title="QArt Encoder" date="June 2024">
 			<p>
 				Something that has been on my todo list for a long time has been to
 				replicate{" "}
@@ -15,9 +15,10 @@ export function QArtEncoder() {
 					this website
 				</a>
 				. It seemed like something that would be both interesting to the user
-				and interesting to code, which is a rare thing for coding projects. It
-				ended up turning out pretty well, my program not only works great, but
-				is faster than all of the other implementations, and the{" "}
+				and interesting for me to code, which is a rare thing for coding
+				projects. It ended up turning out pretty well, the program not only
+				works great, but is faster than all of the other implementations by at
+				least a factor of 100x (this is documented in the repo readme), and the{" "}
 				<a
 					href="https://crates.io/crates/qart"
 					target="_blank"
@@ -25,11 +26,8 @@ export function QArtEncoder() {
 				>
 					published crate
 				</a>{" "}
-				is sitting at 350 downloads at the time of writing.
-			</p>
-			<h2>How It Works</h2>
-			<p>
-				I think Russ Cox&apos;s{" "}
+				is sitting at 350 downloads at the time of writing. To see more about
+				how it works, I think Russ Cox&apos;s{" "}
 				<a
 					href="https://research.swtch.com/qart"
 					target="_blank"
@@ -37,8 +35,7 @@ export function QArtEncoder() {
 				>
 					original article
 				</a>{" "}
-				explains the overall process quite well, so I won&apos;t repeat that
-				here.
+				explains the overall process quite well, so I won&apos;t repeat it here.
 			</p>
 			<img src="/mascot.png" style={{ width: "600px" }} />
 			<p className="caption">an example qr code</p>
@@ -52,9 +49,9 @@ export function QArtEncoder() {
 				even if there was something wrong, the program would still compile and
 				run, but exhibit the ever-dreaded &quot;undefined behavior&quot;. On the
 				other hand, Rust was a joy to debug, and the type system, functional
-				programming features, zero cost abstractions, and fearless concurrency
-				have made the language my new favorite (yes, I read the book). Cargo was
-				also really nice to work with as well.
+				programming features, zero cost abstractions, and &quot;fearless
+				concurrency&quot; made the development expericence one of the best I
+				have had to date. Cargo was really nice to work with as well.
 			</p>
 			<h2>The Process</h2>
 			<p>
@@ -78,7 +75,7 @@ export function QArtEncoder() {
 				>
 					Project Nayuki&apos;s step-by-step QR Code Generator
 				</a>
-				, which i used to check my work at different stages throughout the
+				, which I used to check my work at different stages throughout the
 				process.{" "}
 			</p>{" "}
 			<img src="/mascot2.png" style={{ width: "600px" }} />
@@ -114,7 +111,7 @@ export function QArtEncoder() {
 				very rewarding experience, and I am thankful I had the time and
 				dedication to push through the ~1 month long process.
 			</p>
-			<p>
+			<p style={{ textAlign: "center", width: "100%" }}>
 				View the repo{" "}
 				<a
 					href="https://github.com/andrewyur/qart"
