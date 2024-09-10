@@ -15,6 +15,7 @@ Current Agenda:
 - [ ] set up forwarding from the github domain to the new one
 - [ ] integrate md html renderer and move project articles to md files
 - [ ] join the stevens webring
+- [ ] hook up an email to my domain
 
 Future Roadmap:
 
