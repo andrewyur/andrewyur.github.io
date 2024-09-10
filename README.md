@@ -1,12 +1,19 @@
 # Portfolio Website
 
-Built with React & create-react-app, deployment with github pages: https://andrewyur.github.io/
+Built with React & create-react-app, deployment with github pages: <https://andrewyur.github.io/>
 
 This is a portfolio website I have been in the process of creating for a long time. With solo projects I have often had trouble with motivation and burnout. I tend to have such a grand vision for what the project will be, work on it obsessively for a week or so, and run out of motivation after getting in way over my head.
 
 ## More Ideas
 
-Current Agenda: Finished
+Current Agenda:
+
+- [ ] dockerize and move into a server on google cloud
+- [ ] move under the new domain
+- [ ] remove react router and actually find a static server to host it
+- [ ] move from cra to vite
+- [ ] set up forwarding from the github domain to the new one
+- [ ] integrate md html renderer and move project articles to md files
 
 Future Roadmap:
 
