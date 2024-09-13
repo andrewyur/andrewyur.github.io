@@ -13,7 +13,7 @@ Current Agenda:
 - [ ] remove react router and actually find a static server to host it
 - [ ] move from cra to vite
 - [ ] set up forwarding from the github domain to the new one
-- [ ] integrate md html renderer and move project articles to md files
+- [ ] hook up static site generator to 
 - [ ] join the stevens webring
 - [ ] hook up an email to my domain
 
