@@ -1,0 +1,30 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --light: #fff5da;
+  --dark: #897763;
+  --dark-brown: #301800;
+  --brown: #623100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--dark);
+}
+
+@font-face {
+  font-family: "MS Gothic";
+  src: url("/src/assets/MS-Gothic-latin-only.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "MS PGothic";
+  src: url("/src/assets/MS-PGothic-latin-only.ttf") format("truetype")
+}
