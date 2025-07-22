@@ -13,13 +13,19 @@
     let mouseConstraint: MouseConstraint | null = null;
     let mouse: Mouse | null = null;
 
+    window.addEventListener('resize', (e) => {
+        console.log('resize');
+    });
+
     export function fireEvent(e: MouseEvent | TouchEvent): boolean {
         // console.log(`recieved mouse event: ${e.type}`);
         switch (e.type) {
             case 'mousemove':
             case 'touchmove':
-                // @ts-expect-error
-                mouse?.mousemove(e);
+                if (mouseConstraint?.body) {
+                    // @ts-expect-error
+                    mouse?.mousemove(e);
+                }
                 break;
             case 'mousedown':
             case 'touchstart':
@@ -37,62 +43,54 @@
 
     let parent: HTMLDivElement;
 
-    const startWidth = window.innerWidth * 0.75;
-    const startHeight = window.innerHeight / 2;
+    function createBoxes() {
+        const startWidth = window.innerWidth * 0.75;
+        const startHeight = window.innerHeight / 2;
+        const render = {
+            fillStyle: '#fff5da',
+        };
 
-    const boxes = [
-        Bodies.rectangle(startWidth, startHeight + 30, 40, 40, {
-            render: {
-                fillStyle: '#fff5da',
-            },
-            angle: 30,
-        }),
-        Bodies.rectangle(startWidth - 30, startHeight, 50, 60, {
-            render: {
-                fillStyle: '#fff5da',
-            },
-        }),
-        Bodies.rectangle(startWidth + 15, startHeight, 50, 30, {
-            render: {
-                fillStyle: '#fff5da',
-            },
-            angle: 120,
-        }),
-        Bodies.rectangle(startWidth, startHeight - 10, 50, 70, {
-            render: {
-                fillStyle: '#fff5da',
-            },
-        }),
-    ];
-    const container = [
-        Bodies.rectangle(
-            window.innerWidth / 2,
-            window.innerHeight + 150,
-            window.innerWidth,
-            300,
-            { isStatic: true },
-        ),
-        Bodies.rectangle(window.innerWidth / 2, -150, window.innerWidth, 300, {
-            isStatic: true,
-        }),
-        Bodies.rectangle(
-            -150,
-            window.innerHeight / 2,
-            300,
-            window.innerHeight,
-            { isStatic: true },
-        ),
-        Bodies.rectangle(
-            window.innerWidth + 150,
-            window.innerHeight / 2,
-            300,
-            window.innerHeight,
-            { isStatic: true },
-        ),
-    ];
+        return [
+            Bodies.rectangle(startWidth, startHeight + 30, 40, 40, {
+                render,
+                angle: 30,
+            }),
+            Bodies.rectangle(startWidth - 30, startHeight, 50, 60, {
+                render,
+            }),
+            Bodies.rectangle(startWidth + 15, startHeight, 50, 30, {
+                render,
+                angle: 120,
+            }),
+            Bodies.rectangle(startWidth, startHeight - 10, 50, 70, {
+                render,
+            }),
+        ];
+    }
+
+    function createBoundaries() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        return [
+            Bodies.rectangle(w / 2, h + 151, w, 300, { isStatic: true }),
+            Bodies.rectangle(w / 2, -151, w, 300, { isStatic: true }),
+            Bodies.rectangle(-151, h / 2, 300, h, { isStatic: true }),
+            Bodies.rectangle(w + 151, h / 2, 300, h, { isStatic: true }),
+        ];
+    }
+
+    let container = createBoundaries();
+    let boxes = createBoxes();
 
     onMount(() => {
         const engine = Engine.create();
+
+        // warm up frames
+        for (let i = 0; i < 60; i++) {
+            Engine.update(engine, 1000 / 60);
+        }
+
         const render = Render.create({
             element: parent,
             engine,
@@ -102,6 +100,7 @@
                 background: 'transparent',
                 wireframeBackground: 'transparent',
                 wireframes: false,
+                // showPerformance: true,
             },
         });
 
@@ -123,6 +122,33 @@
         const runner = Runner.create({});
 
         Runner.run(runner, engine);
+
+        function resizeCanvas() {
+            Composite.remove(engine.world, [...container, ...boxes]);
+            container = createBoundaries();
+            boxes = createBoxes();
+            Composite.add(engine.world, [...boxes, ...container]);
+
+            render.canvas.width = window.innerWidth;
+            render.canvas.height = window.innerHeight;
+            render.options.width = window.innerWidth;
+            render.options.height = window.innerHeight;
+        }
+
+        let timeout: ReturnType<typeof setTimeout> | undefined = undefined;
+        function debounceResizeCanvas() {
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = undefined;
+            }
+            timeout = setTimeout(() => {
+                clearTimeout(timeout);
+                timeout = undefined;
+                resizeCanvas();
+            }, 700);
+        }
+
+        window.addEventListener('resize', debounceResizeCanvas);
     });
 </script>
 
@@ -133,9 +159,11 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100dvh;
+        width: 100%;
+        height: 100%;
         z-index: 0;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
     /* :global(canvas) {

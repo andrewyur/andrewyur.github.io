@@ -4,7 +4,7 @@
   import Toy from './lib/Toy.svelte';
 
   let toy: Toy;
-  let pointerEvents = $state(true);
+  let pointerEvents = $state(false);
   // $inspect(pointerEvents);
 
   onMount(() => {
@@ -40,14 +40,14 @@
       'touchstart',
       (e) => (pointerEvents = toy.fireEvent(e)),
       {
-        passive: false,
+        passive: true,
       },
     );
     document.body.addEventListener(
       'touchend',
       (e) => (pointerEvents = toy.fireEvent(e)),
       {
-        passive: false,
+        passive: true,
       },
     );
   });

@@ -1,6 +1,5 @@
 <script lang="ts">
     let { pointerEvents } = $props();
-    $inspect(pointerEvents);
 </script>
 
 <div style:pointer-events={pointerEvents ? 'none' : 'auto'}>
@@ -16,8 +15,7 @@
 
     <p>
         I am computer science student at Stevens Institute of Technology. I am a
-        really quick learner, and talented software engineer. I build good
-        software quickly.
+        really quick learner, and talented software engineer. I enjoy desig.
     </p>
 
     <h2>work experience</h2>
@@ -184,7 +182,8 @@
         max-width: 700px;
         position: relative;
         z-index: 1;
-        padding-left: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
         padding-top: 50px;
         padding-bottom: 70px;
     }
