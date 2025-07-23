@@ -5,6 +5,7 @@
 
   let toy: Toy;
   let pointerEvents = $state(false);
+  let visible = $state(false);
   // $inspect(pointerEvents);
 
   onMount(() => {
@@ -50,13 +51,22 @@
         passive: true,
       },
     );
+    setTimeout(() => (visible = true), 200);
   });
 </script>
 
-<main>
+<main class={visible ? 'visible' : null}>
   <Content {pointerEvents} />
   <Toy bind:this={toy} />
 </main>
 
 <style>
+  main {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .visible {
+    opacity: 1;
+  }
 </style>

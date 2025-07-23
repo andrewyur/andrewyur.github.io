@@ -43,14 +43,22 @@
 
     let parent: HTMLDivElement;
 
-    function createBoxes() {
-        const startWidth = window.innerWidth * 0.75;
-        const startHeight = window.innerHeight / 2;
+    onMount(() => {
+        const w = window.visualViewport?.width ?? window.innerWidth;
+        const h = parent.offsetHeight;
+        const startWidth = w * 0.75;
+        const startHeight = h / 2;
         const render = {
             fillStyle: '#fff5da',
         };
 
-        return [
+        let container = [
+            Bodies.rectangle(w / 2, h + 151, w, 300, { isStatic: true }),
+            Bodies.rectangle(w / 2, -151, w, 300, { isStatic: true }),
+            Bodies.rectangle(-151, h / 2, 300, h, { isStatic: true }),
+            Bodies.rectangle(w + 151, h / 2, 300, h, { isStatic: true }),
+        ];
+        let boxes = [
             Bodies.rectangle(startWidth, startHeight + 30, 40, 40, {
                 render,
                 angle: 30,
@@ -66,24 +74,7 @@
                 render,
             }),
         ];
-    }
 
-    function createBoundaries() {
-        const w = window.innerWidth;
-        const h = window.innerHeight;
-
-        return [
-            Bodies.rectangle(w / 2, h + 151, w, 300, { isStatic: true }),
-            Bodies.rectangle(w / 2, -151, w, 300, { isStatic: true }),
-            Bodies.rectangle(-151, h / 2, 300, h, { isStatic: true }),
-            Bodies.rectangle(w + 151, h / 2, 300, h, { isStatic: true }),
-        ];
-    }
-
-    let container = createBoundaries();
-    let boxes = createBoxes();
-
-    onMount(() => {
         const engine = Engine.create();
 
         // warm up frames
@@ -91,12 +82,12 @@
             Engine.update(engine, 1000 / 60);
         }
 
-        const render = Render.create({
+        const renderer = Render.create({
             element: parent,
             engine,
             options: {
-                width: window.innerWidth,
-                height: window.innerHeight,
+                width: w,
+                height: h,
                 background: 'transparent',
                 wireframeBackground: 'transparent',
                 wireframes: false,
@@ -104,7 +95,7 @@
             },
         });
 
-        mouse = Mouse.create(render.canvas);
+        mouse = Mouse.create(renderer.canvas);
         mouseConstraint = MouseConstraint.create(engine, {
             mouse,
             constraint: {
@@ -116,39 +107,12 @@
         });
 
         Composite.add(engine.world, [...container, ...boxes, mouseConstraint]);
-        render.mouse = mouse;
+        renderer.mouse = mouse;
 
-        Render.run(render);
+        Render.run(renderer);
         const runner = Runner.create({});
 
         Runner.run(runner, engine);
-
-        function resizeCanvas() {
-            Composite.remove(engine.world, [...container, ...boxes]);
-            container = createBoundaries();
-            boxes = createBoxes();
-            Composite.add(engine.world, [...boxes, ...container]);
-
-            render.canvas.width = window.innerWidth;
-            render.canvas.height = window.innerHeight;
-            render.options.width = window.innerWidth;
-            render.options.height = window.innerHeight;
-        }
-
-        let timeout: ReturnType<typeof setTimeout> | undefined = undefined;
-        function debounceResizeCanvas() {
-            if (timeout) {
-                clearTimeout(timeout);
-                timeout = undefined;
-            }
-            timeout = setTimeout(() => {
-                clearTimeout(timeout);
-                timeout = undefined;
-                resizeCanvas();
-            }, 700);
-        }
-
-        window.addEventListener('resize', debounceResizeCanvas);
     });
 </script>
 
@@ -160,7 +124,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100lvh;
         z-index: 0;
         -webkit-user-select: none;
         user-select: none;

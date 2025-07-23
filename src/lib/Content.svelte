@@ -15,8 +15,8 @@
 
     <p>
         I am computer science student at Stevens Institute of Technology. I am a
-        really quick learner, and talented software engineer. I enjoy designing
-        and building software.
+        really quick learner, and a talented software engineer. I enjoy
+        designing and building software.
     </p>
 
     <h2>work experience</h2>
