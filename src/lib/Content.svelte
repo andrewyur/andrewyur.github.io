@@ -9,7 +9,7 @@
     <h1>
         <a
             href="https://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fandrewyur%2Fresume%2Freleases%2Flatest%2Fdownload%2Fresume.pdf"
-            >Resume</a
+            >view resume</a
         >
     </h1>
 
@@ -165,7 +165,8 @@
     }
 
     h1 {
-        margin: 0.1em 0;
+        margin: 0.15em 0;
+        padding: 0.1em 0;
     }
 
     p {
