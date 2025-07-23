@@ -7,12 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist --cname baetylboy.biz"
   },
+  "homepage": "https://andrewyur.github.io",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^6.0.0",
     "@tsconfig/svelte": "^5.0.4",
     "@types/matter-js": "^0.19.8",
+    "gh-pages": "^6.3.0",
     "svelte": "^5.35.5",
     "svelte-check": "^4.2.2",
     "typescript": "~5.8.3",

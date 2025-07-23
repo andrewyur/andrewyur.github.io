@@ -15,32 +15,32 @@
 
     <p>
         I am computer science student at Stevens Institute of Technology. I am a
-        really quick learner, and talented software engineer. I enjoy desig.
+        really quick learner, and talented software engineer. I enjoy designing
+        and building software.
     </p>
 
     <h2>work experience</h2>
     <h3>Software Engineering Internship - BAE Systems - Summer 2025</h3>
     <p>
-        I took ownership of a Fullstack Web UI for a Signals
-        Intelligence(sigint) platform, which was built with Vue and Node. During
-        my time here, I rewrote the entire codebase from plain javascript &
-        commonjs to Typescript & ES6 modules, upgraded the frontend from Vue 2
-        to Vue 3, integrated a server framework into the backend, and added a
-        build step with Vite that reduced uncached page load time from 10
-        seconds to 400 milliseconds. I also added a user interface for the
-        signal intelligence platform's file upload system, which involved
-        designing a websocket protocol, and making GRPC calls and streaming
-        files from the backend to the sigint system. I was also able to make a
-        lot of container optimizations: The UI was running accross 3 pods in a
-        kubernetes cluster, and I was able to condense them all into one pod and
-        only 1 exposed port, using Nginx as a reverse proxy. This reduced the
-        combined image size for the UI by 1.1GB, and allowed the user to access
-        the UI on their local browser with ssh port forwarding. I was also able
-        to reduce the UI's image build time by 98% (6 mins to 5 secs) by
-        rewriting the dockerfile to take better advantage of layer caching. I
-        had a blast working here, the work I was doing was similar to what i
-        would have been doing for fun if I was unemployed, I often found myself
-        pulling 11 hour days without meaning to.
+        I took ownership of a Fullstack Web UI for a Signals Intelligence
+        platform, which was built with Vue and Node. During my time here, I
+        rewrote the entire codebase from commonjs JavaScript to ES6 Typescript,
+        upgraded the frontend from Vue 2 to Vue 3, integrated a server framework
+        into the backend, and added a build step with Vite that reduced uncached
+        page load time from 10 seconds to 400 milliseconds. I also added a user
+        interface for the platform's file upload system, which involved
+        designing a websocket protocol and common interface, making GRPC calls,
+        and streaming files from the backend to the platform. I was also able to
+        make a lot of container optimizations: The UI was running accross 4 pods
+        in a kubernetes cluster, and I was able to condense them all into one
+        pod and only 1 exposed port, using Nginx as a reverse proxy. This
+        reduced the combined image size for the UI by 1.1GB, and allowed the
+        user to access the UI on their local browser with ssh port forwarding. I
+        was also able to reduce the UI's image build time by 98% (6 mins to 5
+        secs) by rewriting the dockerfile to take better advantage of layer
+        caching. I had a blast working here, the work I was doing was similar to
+        what I would have been doing for fun if I was unemployed, I often found
+        myself pulling 11 hour days without meaning to.
     </p>
 
     <h3>Software Engineering Internship - Jacobs Technology - Summer 2024</h3>
@@ -65,12 +65,12 @@
         I led a team of 4 developers in maintaining and developing new features
         for the fund's internal website, which provided portfolio information
         and analysis tools to the fund's equity analysts. The website was
-        written in React, and used python and flask for the backend. While I was
-        there I made a page for the site that showed graphs depicting the fund's
-        performance metrics, which involved pulling data from yfinance,
+        written in React, and used Python and Flask for the backend. While I was
+        there, I made a page for the site that showed graphs depicting the
+        fund's performance metrics, which involved pulling data from yfinance,
         calculating the fund performance metrics with pandas, and then caching
         the resulting data. I had a great time in this position, I learned a lot
-        about managing people and software design analysis.
+        about managing people and leading a team of software engineers.
     </p>
 
     <h2>projects</h2>
@@ -88,11 +88,12 @@
         I found out that apple photos provides a web viewer for the shared
         album, and so I decided to reverse engineer the front end code, and
         figure out how to call the private API that the apple photos website
-        uses, so that I could display the photos on my website without having to
-        worry about hosting. I became very familiar with the devtools debugger
-        with this project, there was about 4k lines of minified code to dig
-        through. I built the website with Svelte, and made a special effort to
-        create a site that looks good on mobile and desktop.
+        uses to fetch photos from the album, so that I could display the photos
+        on my website without having to worry about storing them. I became very
+        familiar with the devtools debugger with this project, there was about
+        4k lines of minified code to dig through. I built the website with
+        Svelte, and made a special effort to create a site that looks good on
+        mobile and desktop.
     </p>
 
     <h3>
@@ -108,9 +109,9 @@
         worry about edit conflicts. I ended up creating my own version of an
         operational transformation algorithm, which allowed for merging
         divergent document states of any length. This means that clients can
-        push changes to the server without pulling them in first or have a
-        really slow connection to the server, and still have the same document
-        once the dust settles. I wrote this project in elixir, a functional
+        push changes to the server without pulling them in first, or have a
+        really slow connection to the server and still have the same document
+        once the dust settles. I wrote this project in Elixir, a functional
         programming language that is a sibling of Erlang, famous for its fault
         tolerance features. It was a really unique experience, and it was also
         very interesting to tackle the challenges using a functional programming
@@ -124,16 +125,16 @@
         - <a href="https://crates.io/crates/qart">crates.io</a>
     </h3>
     <p>
-        I wrote a rust implementation of the process described in
+        I wrote a Rust implementation of the process described in
         <a href="https://research.swtch.com/qart">this article</a>, which
-        utilized multithreading and rust's high performance to do it at least
+        utilized multithreading and Rust's high performance to do it at least
         100 times faster than other implementations. the process of encoding an
         image into a working QR code was really complex, and the article only
         gave vague instructions. I had to piece this together from bits of code
         across repositories, and without any prior understanding of linear
         algebra or of QR codes, it was a significant learning experience.
-        Looking back on it, the code is pretty messy and not idiomatic, I am
-        certainly better with rust these days...
+        Looking back on it, the code is pretty messy and not very idiomatic, I
+        am certain I could write better Rust code these days...
     </p>
 
     <h2>other things</h2>
@@ -142,8 +143,8 @@
             href="https://docs.google.com/viewer?url=https%3A%2F%2Fusfca.org%2Fwp-admin%2Fadmin-ajax.php%3Fjuwpfisadmin%3Dfalse%26action%3Dwpfd%26task%3Dfile.download%26wpfd_category_id%3D77%26wpfd_file_id%3D42521%26token%3D%26preview%3D1&embedded=true"
             >all american honorable mention</a
         >
-        last season), and I enjoy playing pool and video games, listening to music
-        and fantasy/sci-fi audiobooks, and
+        last season), I enjoy playing pool and video games, listening to music and
+        fantasy/sci-fi audiobooks, and
         <a href="https://photos.baetylboy.biz">photography</a> in my free time
     </p>
 </div>
