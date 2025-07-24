@@ -127,12 +127,8 @@
         left: 0;
         width: 100%;
         height: 100lvh;
-        z-index: 0;
+        z-index: -1;
         -webkit-user-select: none;
         user-select: none;
     }
-
-    /* :global(canvas) {
-        pointer-events: none;
-    } */
 </style>

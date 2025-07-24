@@ -182,8 +182,6 @@
 
     div {
         max-width: 700px;
-        position: relative;
-        z-index: 1;
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 50px;
