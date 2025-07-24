@@ -8,7 +8,7 @@
         Mouse,
         MouseConstraint,
     } from 'matter-js';
-    import { onMount } from 'svelte';
+    import { onMount, tick } from 'svelte';
 
     let mouseConstraint: MouseConstraint | null = null;
     let mouse: Mouse | null = null;
@@ -43,7 +43,9 @@
 
     let parent: HTMLDivElement;
 
-    onMount(() => {
+    onMount(async () => {
+        await tick(); // wait for dom to paint before getting height of parent element
+
         const w = window.visualViewport?.width ?? window.innerWidth;
         const h = parent.offsetHeight;
         const startWidth = w * 0.75;
