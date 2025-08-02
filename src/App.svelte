@@ -64,6 +64,7 @@
   main {
     opacity: 0;
     transition: opacity 0.3s ease;
+    width: 100%;
   }
 
   .visible {
