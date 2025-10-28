@@ -203,4 +203,17 @@
         padding-bottom: 100px;
         width: 100%;
     }
+
+    @media (min-width: 768px) {
+        .content {
+            max-width: 800px;
+        }
+    }
+
+    /* For large screens (e.g., desktops) */
+    @media (min-width: 1200px) {
+        .content {
+            max-width: 900px;
+        }
+    }
 </style>

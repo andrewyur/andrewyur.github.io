@@ -16,11 +16,12 @@
     let mouseConstraint: MouseConstraint | null = null;
     let mouse: Mouse | null = null;
 
+    let interacted = $state(false);
     let showHint = $state(false);
 
     setTimeout(() => {
-        showHint = true;
-    }, 5000);
+        showHint = !interacted;
+    }, 10000);
 
     export function fireEvent(e: MouseEvent | TouchEvent): boolean {
         // console.log(`recieved mouse event: ${e.type}`);
@@ -58,8 +59,8 @@
 
     const handleResize = (e: UIEvent) => {
         if (renderer) {
-            const w = window.visualViewport?.width ?? window.innerWidth;
-            const h = parent.offsetHeight;
+            const w = window.innerWidth;
+            const h = window.innerHeight;
 
             renderer.bounds.max.x = w;
             renderer.bounds.max.y = h;
@@ -112,13 +113,17 @@
                         container.right,
                     ),
                 );
-            }
 
-            // update the render bounds to fit the scene
-            Render.lookAt(renderer, Composite.allBodies(engine.world), {
-                x: -301,
-                y: -301,
-            });
+                // update the render bounds to fit the scene
+                Render.lookAt(
+                    renderer,
+                    Object.values(container).filter((b) => b !== null),
+                    {
+                        x: -301,
+                        y: -301,
+                    },
+                );
+            }
         }
     };
 
@@ -127,8 +132,8 @@
 
         await new Promise(requestAnimationFrame); // wait for dom to paint before getting height of parent element
 
-        const w = window.visualViewport?.width ?? window.innerWidth;
-        const h = parent.offsetHeight;
+        const w = window.innerWidth;
+        const h = window.innerHeight;
         const startWidth = w * 0.75;
         const startHeight = h / 2;
         const render = {
@@ -219,8 +224,8 @@
 
         Runner.run(runner, engine);
 
-        Events.on(mouseConstraint, 'mousedown', () => {
-            showHint = false;
+        Events.on(mouseConstraint, 'startdrag', () => {
+            interacted = true;
         });
     });
 

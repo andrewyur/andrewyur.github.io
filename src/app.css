@@ -32,3 +32,18 @@ body {
   font-family: "MS PGothic";
   src: url("/src/assets/MS-PGothic-latin-only.ttf") format("truetype")
 }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+    /* Increase the root font size */
+  }
+}
+
+/* For large screens (e.g., desktops) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+    /* Increase the root font size again */
+  }
+}
