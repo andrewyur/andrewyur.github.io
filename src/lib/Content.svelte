@@ -200,7 +200,7 @@
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 50px;
-        padding-bottom: 70px;
+        padding-bottom: 100px;
         width: 100%;
     }
 </style>

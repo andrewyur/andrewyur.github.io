@@ -5,8 +5,13 @@
   -moz-osx-font-smoothing: grayscale;
   --light: #fff5da;
   --dark: #897763;
-  --dark-brown: #301800;
-  --brown: #623100;
+  /* --dark-brown: #301800;
+  --brown: #623100; */
+}
+
+html {
+  /* overscroll-behavior: none; */
+  background-color: var(--dark);
 }
 
 body {
@@ -16,7 +21,6 @@ body {
   flex-direction: column;
   width: 100vw;
   overflow-x: hidden;
-  background-color: var(--dark);
 }
 
 @font-face {
