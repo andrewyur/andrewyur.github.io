@@ -226,6 +226,7 @@
 
         Events.on(mouseConstraint, 'startdrag', () => {
             interacted = true;
+            showHint = false;
         });
     });
 
