@@ -2,34 +2,35 @@
 \r\f \v\uFEFF`];function bi(c,m,p){var C=c==null?"":""+c;if(m&&(C=C?C+" "+m:m),p){for(var f in p)if(p[f])C=C?C+" "+f:f;else if(C.length)for(var e=f.length,l=0;(l=C.indexOf(f,l))>=0;){var s=l+e;(l===0||Ut.includes(C[l-1]))&&(s===C.length||Ut.includes(C[s]))?C=(l===0?"":C.substring(0,l))+C.substring(s+1):l=s}}return C===""?null:C}function Wt(c,m=!1){var p=m?" !important;":";",C="";for(var f in c){var e=c[f];e!=null&&e!==""&&(C+=" "+f+": "+e+p)}return C}function Oi(c,m){if(m){var p="",C,f;return Array.isArray(m)?(C=m[0],f=m[1]):C=m,C&&(p+=Wt(C)),f&&(p+=Wt(f,!0)),p=p.trim(),p===""?null:p}return String(c)}function wn(c,m,p,C,f,e){var l=c.__className;if(l!==p||l===void 0){var s=bi(p,C,e);s==null?c.removeAttribute("class"):m?c.className=s:c.setAttribute("class",s),c.__className=p}else if(e&&f!==e)for(var n in e){var u=!!e[n];(f==null||u!==!!f[n])&&c.classList.toggle(n,u)}return e}function it(c,m={},p,C){for(var f in p){var e=p[f];m[f]!==e&&(p[f]==null?c.style.removeProperty(f):c.style.setProperty(f,e,C))}}function Vi(c,m,p,C){var f=c.__style;if(f!==m){var e=Oi(m,C);e==null?c.removeAttribute("style"):c.style.cssText=e,c.__style=m}else C&&(Array.isArray(C)?(it(c,p?.[0],C[0]),it(c,p?.[1],C[1],"important")):it(c,p,C));return C}function $t(c,m){return c===m||c?.[Ge]===m}function Sn(c={},m,p,C){return di(()=>{var f,e;return gi(()=>{f=e,e=[],xn(()=>{c!==p(...e)&&(m(c,...e),f&&$t(p(...f),c)&&m(null,...f))})}),()=>{jn(()=>{e&&$t(p(...e),c)&&m(null,...e)})}}),c}function lt(c){ie===null&&Vn(),vi(()=>{const m=xn(c);if(typeof m=="function")return m})}const Hi="5";typeof window<"u"&&((window.__svelte??={}).v??=new Set).add(Hi);var Ni=St(`<div class="scroll svelte-12s168x"><div class="content svelte-12s168x"><h1 class="svelte-12s168x">Andrew Yurovchak</h1> <h1 class="svelte-12s168x">Hoboken New Jersey || Nashua New Hampshire</h1> <h1 class="svelte-12s168x"><a href="mailto:andy@yurovchak.net" class="svelte-12s168x">andy@yurovchak.net</a></h1> <h1 class="svelte-12s168x"><a href="https://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fandrewyur%2Fresume%2Freleases%2Flatest%2Fdownload%2Fresume.pdf" class="svelte-12s168x">view resume</a></h1> <p class="svelte-12s168x">I am computer science student at Stevens Institute of Technology. I
             am a really quick learner, and a talented software engineer. I enjoy
             designing and building software.</p> <h2 class="svelte-12s168x">work experience</h2> <h3 class="svelte-12s168x">Software Engineering Internship - BAE Systems - Summer 2025</h3> <p class="svelte-12s168x">I took ownership of a Fullstack Web UI for a Signals Intelligence
-            platform, which was built with Vue and Node. During my time here, I
-            rewrote the entire codebase from commonjs JavaScript to ES6
+            platform, which was built with Vue and NodeJS. During my time here,
+            I rewrote the entire codebase from commonjs JavaScript to ES6
             Typescript, upgraded the frontend from Vue 2 to Vue 3, integrated a
             server framework into the backend, and added a build step with Vite
             that reduced uncached page load time from 10 seconds to 400
             milliseconds. I also added a user interface for the platform's file
             upload system, which involved designing a websocket protocol and
-            common interface, making GRPC calls, and streaming files from the
-            backend to the platform. I was also able to make a lot of container
-            optimizations: The UI was running accross 4 pods in a kubernetes
-            cluster, and I was able to condense them all into one pod and only 1
-            exposed port, using Nginx as a reverse proxy. This reduced the
-            combined image size for the UI by 1.1GB, and allowed the user to
-            access the UI on their local browser with ssh port forwarding. I was
-            also able to reduce the UI's image build time by 98% (6 mins to 5
-            secs) by rewriting the dockerfile to take better advantage of layer
-            caching. I had a blast working here, the work I was doing was
-            similar to what I would have been doing for fun if I was unemployed,
-            I often found myself pulling 11 hour days without meaning to.</p> <h3 class="svelte-12s168x">Software Engineering Internship - Jacobs Technology - Summer 2024</h3> <p class="svelte-12s168x">I worked on an agile software development team, and completed
+            common interface, creating a gRPC client, and streaming files from
+            the backend to the platform. I was also able to make a lot of
+            container optimizations: The UI was running accross 4 pods in a
+            kubernetes cluster, and I was able to condense them all into one pod
+            and only 1 exposed port, using Nginx as a reverse proxy. This
+            reduced the combined image size for the UI by 1.1GB, and allowed the
+            user to access the UI on their local browser with ssh port
+            forwarding. I was also able to reduce the UI's image build time by
+            98% (6 mins to 5 secs) by rewriting the dockerfile to take better
+            advantage of layer caching. I had a blast working here, the work I
+            was doing was similar to what I would have been doing for fun if I
+            was unemployed, I often found myself pulling 11 hour days without
+            meaning to.</p> <h3 class="svelte-12s168x">Software Engineering Internship - Jacobs Technology - Summer 2024</h3> <p class="svelte-12s168x">I worked on an agile software development team, and completed
             feature requests and bug fixes across a wide range of .NET based
             applications. The area I was in focused mostly on creating
             applications that compressed navigation data for military aircraft.
             Most of my time here was spent digging through confusing,
             undocumented code and traversing gigantic inheritance trees. I was
             also able to do some work on an internal load testing tool with some
-            other interns, also written in .NET. I implemented error handling
-            features which prevented the entire 4hr+ runtime from going forward
-            if there was an error in the configuration.</p> <h3 class="svelte-12s168x">Head of Risk and Development - Stevens Student Managed Investment
+            other interns, also made with .NET. I implemented error handling
+            features which prevented the entire 4hr+ program runtime from
+            proceeding if there was an error in the configuration.</p> <h3 class="svelte-12s168x">Head of Risk and Development - Stevens Student Managed Investment
             Fund - Fall 2024</h3> <p class="svelte-12s168x">I led a team of 4 developers in maintaining and developing new
             features for the fund's internal website, which provided portfolio
             information and analysis tools to the fund's equity analysts. The
@@ -47,8 +48,11 @@
             end code, and figure out how to call the private API that the apple
             photos website uses to fetch photos from the album, so that I could
             display the photos on my website without having to worry about
-            storing them. I became very familiar with the devtools debugger with
-            this project, there was about 4k lines of minified code to dig
+            storing them. Although it was a bit of a slog, I was able to do it
+            successfully, and also eliminate the ~1 minute page load time by
+            setting a cron-job to fetch updated photo ids and store them in a
+            storage bucket. I became very familiar with the devtools debugger
+            with this project, there was 110kb of minified javascript to dig
             through. I built the website with Svelte, and made a special effort
             to create a site that looks good on mobile and desktop.</p> <h3 class="svelte-12s168x">Collaborative text editor - <a href="https://collab-notepad.baetylboy.biz" class="svelte-12s168x">live link</a> - <a href="https://github.com/andrewyur/collab_notepad" class="svelte-12s168x">github</a></h3> <p class="svelte-12s168x">I built a google-docs-style collaborative text editor, that allows
             multiple people to edit a text document in real time, without having
@@ -60,8 +64,8 @@
             document once the dust settles. I wrote this project in Elixir, a
             functional programming language that is a sibling of Erlang, famous
             for its fault tolerance features. It was a really unique experience,
-            and it was also very interesting to tackle the challenges using a
-            functional programming language presented.</p> <h3 class="svelte-12s168x">QR code image encoder - <a href="https://github.com/andrewyur/qart" class="svelte-12s168x">github</a> - <a href="https://crates.io/crates/qart" class="svelte-12s168x">crates.io</a></h3> <p class="svelte-12s168x">I wrote a Rust implementation of the process described in <a href="https://research.swtch.com/qart" class="svelte-12s168x">this article</a>, which
+            and it was also very interesting to tackle the challenges using an
+            dynamically typed functional programming language presented.</p> <h3 class="svelte-12s168x">QR code image encoder - <a href="https://github.com/andrewyur/qart" class="svelte-12s168x">github</a> - <a href="https://crates.io/crates/qart" class="svelte-12s168x">crates.io</a></h3> <p class="svelte-12s168x">I wrote a Rust implementation of the process described in <a href="https://research.swtch.com/qart" class="svelte-12s168x">this article</a>, which
             utilized multithreading and Rust's high performance to do it at
             least 100 times faster than other implementations. the process of
             encoding an image into a working QR code was really complex, and the
