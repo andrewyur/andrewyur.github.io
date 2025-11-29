@@ -24,25 +24,26 @@
         <h3>Software Engineering Internship - BAE Systems - Summer 2025</h3>
         <p>
             I took ownership of a Fullstack Web UI for a Signals Intelligence
-            platform, which was built with Vue and Node. During my time here, I
-            rewrote the entire codebase from commonjs JavaScript to ES6
+            platform, which was built with Vue and NodeJS. During my time here,
+            I rewrote the entire codebase from commonjs JavaScript to ES6
             Typescript, upgraded the frontend from Vue 2 to Vue 3, integrated a
             server framework into the backend, and added a build step with Vite
             that reduced uncached page load time from 10 seconds to 400
             milliseconds. I also added a user interface for the platform's file
             upload system, which involved designing a websocket protocol and
-            common interface, making GRPC calls, and streaming files from the
-            backend to the platform. I was also able to make a lot of container
-            optimizations: The UI was running accross 4 pods in a kubernetes
-            cluster, and I was able to condense them all into one pod and only 1
-            exposed port, using Nginx as a reverse proxy. This reduced the
-            combined image size for the UI by 1.1GB, and allowed the user to
-            access the UI on their local browser with ssh port forwarding. I was
-            also able to reduce the UI's image build time by 98% (6 mins to 5
-            secs) by rewriting the dockerfile to take better advantage of layer
-            caching. I had a blast working here, the work I was doing was
-            similar to what I would have been doing for fun if I was unemployed,
-            I often found myself pulling 11 hour days without meaning to.
+            common interface, creating a gRPC client, and streaming files from
+            the backend to the platform. I was also able to make a lot of
+            container optimizations: The UI was running accross 4 pods in a
+            kubernetes cluster, and I was able to condense them all into one pod
+            and only 1 exposed port, using Nginx as a reverse proxy. This
+            reduced the combined image size for the UI by 1.1GB, and allowed the
+            user to access the UI on their local browser with ssh port
+            forwarding. I was also able to reduce the UI's image build time by
+            98% (6 mins to 5 secs) by rewriting the dockerfile to take better
+            advantage of layer caching. I had a blast working here, the work I
+            was doing was similar to what I would have been doing for fun if I
+            was unemployed, I often found myself pulling 11 hour days without
+            meaning to.
         </p>
 
         <h3>
@@ -56,9 +57,9 @@
             Most of my time here was spent digging through confusing,
             undocumented code and traversing gigantic inheritance trees. I was
             also able to do some work on an internal load testing tool with some
-            other interns, also written in .NET. I implemented error handling
-            features which prevented the entire 4hr+ runtime from going forward
-            if there was an error in the configuration.
+            other interns, also made with .NET. I implemented error handling
+            features which prevented the entire 4hr+ program runtime from
+            proceeding if there was an error in the configuration.
         </p>
 
         <h3>
@@ -97,8 +98,11 @@
             end code, and figure out how to call the private API that the apple
             photos website uses to fetch photos from the album, so that I could
             display the photos on my website without having to worry about
-            storing them. I became very familiar with the devtools debugger with
-            this project, there was about 4k lines of minified code to dig
+            storing them. Although it was a bit of a slog, I was able to do it
+            successfully, and also eliminate the ~1 minute page load time by
+            setting a cron-job to fetch updated photo ids and store them in a
+            storage bucket. I became very familiar with the devtools debugger
+            with this project, there was 110kb of minified javascript to dig
             through. I built the website with Svelte, and made a special effort
             to create a site that looks good on mobile and desktop.
         </p>
@@ -121,8 +125,8 @@
             document once the dust settles. I wrote this project in Elixir, a
             functional programming language that is a sibling of Erlang, famous
             for its fault tolerance features. It was a really unique experience,
-            and it was also very interesting to tackle the challenges using a
-            functional programming language presented.
+            and it was also very interesting to tackle the challenges using an
+            dynamically typed functional programming language presented.
         </p>
 
         <h3>
