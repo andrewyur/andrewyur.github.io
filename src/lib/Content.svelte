@@ -5,12 +5,10 @@
 <div class="scroll" style:pointer-events={pointerEvents ? 'none' : 'auto'}>
     <div class="content">
         <h1>Andrew Yurovchak</h1>
-        <h1>Hoboken New Jersey || Nashua New Hampshire</h1>
-        <h1><a href="mailto:andy@yurovchak.net">andy@yurovchak.net</a></h1>
+        <h1>Nashua New Hampshire</h1>
         <h1>
-            <a
-                href="https://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fandrewyur%2Fresume%2Freleases%2Flatest%2Fdownload%2FAndrew_Yurovchak_Resume.pdf"
-                >view resume</a
+            <a href="https://www.linkedin.com/in/andrew-yurovchak"
+                >Reach me on Linkedin</a
             >
         </h1>
 
