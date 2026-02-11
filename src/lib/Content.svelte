@@ -5,16 +5,18 @@
 <div class="scroll" style:pointer-events={pointerEvents ? 'none' : 'auto'}>
     <div class="content">
         <h1>Andrew Yurovchak</h1>
-        <h1>Nashua New Hampshire</h1>
+        <h1>Nashua New Hampshire | Hoboken New Jersey</h1>
         <h1>
             <a href="https://www.linkedin.com/in/andrew-yurovchak"
-                >Reach me on Linkedin</a
+                >Linkedin</a
+            > <a href="https://github.com/andrewyur"
+                >Github</a
             >
         </h1>
 
         <p>
             I am computer science student at Stevens Institute of Technology. I
-            am a really quick learner, and a good software engineer. I enjoy
+            am a really quick learner, and a competent software engineer (in my opinion). I enjoy
             designing and building software.
         </p>
 
@@ -132,6 +134,7 @@
                 >github</a
             >
             - <a href="https://crates.io/crates/qart">crates.io</a>
+            - <a href="https://qart.baetylboy.biz">web version</a>
         </h3>
         <p>
             I wrote a Rust implementation of the process described in
