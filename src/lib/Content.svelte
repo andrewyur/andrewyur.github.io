@@ -1,224 +1,213 @@
 <script lang="ts">
-    let { pointerEvents } = $props();
+  let { pointerEvents } = $props();
 </script>
 
-<div class="scroll" style:pointer-events={pointerEvents ? 'none' : 'auto'}>
-    <div class="content">
-        <h1>Andrew Yurovchak</h1>
-        <h1>Nashua New Hampshire | Hoboken New Jersey</h1>
-        <h1>
-            <a href="https://www.linkedin.com/in/andrew-yurovchak"
-                >Linkedin</a
-            > <a href="https://github.com/andrewyur"
-                >Github</a
-            >
-        </h1>
+<div class="scroll" style:pointer-events={pointerEvents ? "none" : "auto"}>
+  <div class="content">
+    <h1>Andrew Yurovchak</h1>
+    <h1>Nashua New Hampshire</h1>
+    <h1>
+      <a href="https://www.linkedin.com/in/andrew-yurovchak">Linkedin</a>
+      <a href="https://github.com/andrewyur">Github</a>
+    </h1>
 
-        <p>
-            I am computer science student at Stevens Institute of Technology. I
-            am a really quick learner, and a competent software engineer (in my opinion). I enjoy
-            designing and building software.
-        </p>
+    <p>
+      I am a software engineer at BAE Systems and a recent computer science
+      graduate from Stevens Institute of Technology. I am a really quick
+      learner, and a good software engineer. I enjoy designing and building
+      software.
+    </p>
 
-        <h2>work experience</h2>
-        <h3>Software Engineering Internship - BAE Systems - Summer 2025</h3>
-        <p>
-            I took ownership of a Fullstack Web UI for a Signals Intelligence
-            platform, which was built with Vue and NodeJS. During my time here,
-            I rewrote the entire codebase from commonjs JavaScript to ES6
-            Typescript, upgraded the frontend from Vue 2 to Vue 3, integrated a
-            server framework into the backend, and added a build step with Vite
-            that reduced uncached page load time from 10 seconds to 400
-            milliseconds. I also added a user interface for the platform's file
-            upload system, which involved designing a websocket protocol and
-            common interface, creating a gRPC client, and streaming files from
-            the backend to the platform. I was also able to make a lot of
-            container optimizations: The UI was running accross 4 pods in a
-            kubernetes cluster, and I was able to condense them all into one pod
-            and only 1 exposed port, using Nginx as a reverse proxy. This
-            reduced the combined image size for the UI by 1.1GB, and allowed the
-            user to access the UI on their local browser with ssh port
-            forwarding. I was also able to reduce the UI's image build time by
-            98% (6 mins to 5 secs) by rewriting the dockerfile to take better
-            advantage of layer caching. I had a blast working here, the work I
-            was doing was similar to what I would have been doing for fun if I
-            was unemployed, I often found myself pulling 11 hour days without
-            meaning to.
-        </p>
+    <h2>work experience</h2>
+    <h3>Software Engineer - BAE Systems - Summer 2026 : Present</h3>
+    <p>Starting soon...</p>
+    <h3>Software Engineering Internship - BAE Systems - Summer 2025</h3>
+    <p>
+      I took ownership of a Fullstack Web UI for a Signals Intelligence
+      platform, which was built with Vue and NodeJS. During my time here, I
+      rewrote the entire codebase from commonjs JavaScript to ES6 Typescript,
+      upgraded the frontend from Vue 2 to Vue 3, integrated a server framework
+      into the backend, and added a build step with Vite that reduced uncached
+      page load time from 10 seconds to 400 milliseconds. I also added a user
+      interface for the platform's file upload system, which involved designing
+      a websocket protocol and common interface, creating a gRPC client, and
+      streaming files from the backend to the platform. I was also able to make
+      a lot of container optimizations: The UI was running accross 4 pods in a
+      kubernetes cluster, and I was able to condense them all into one pod and
+      only 1 exposed port, using Nginx as a reverse proxy. This reduced the
+      combined image size for the UI by 1.1GB, and allowed the user to access
+      the UI on their local browser with ssh port forwarding. I was also able to
+      reduce the UI's image build time by 98% (6 mins to 5 secs) by rewriting
+      the dockerfile to take better advantage of layer caching. I had a blast
+      working here, the work I was doing was similar to what I would have been
+      doing for fun if I was unemployed, I often found myself pulling 11 hour
+      days without meaning to.
+    </p>
 
-        <h3>
-            Software Engineering Internship - Jacobs Technology - Summer 2024
-        </h3>
-        <p>
-            I worked on an agile software development team, and completed
-            feature requests and bug fixes across a wide range of .NET based
-            applications. The area I was in focused mostly on creating
-            applications that compressed navigation data for military aircraft.
-            Most of my time here was spent digging through confusing,
-            undocumented code and traversing gigantic inheritance trees. I was
-            also able to do some work on an internal load testing tool with some
-            other interns, also made with .NET. I implemented error handling
-            features which prevented the entire 4hr+ program runtime from
-            proceeding if there was an error in the configuration.
-        </p>
+    <h3>Software Engineering Internship - Jacobs Technology - Summer 2024</h3>
+    <p>
+      I worked on an agile software development team, and completed feature
+      requests and bug fixes across a wide range of .NET based applications. The
+      area I was in focused mostly on creating applications that compressed
+      navigation data for military aircraft. Most of my time here was spent
+      digging through confusing, undocumented code and traversing gigantic
+      inheritance trees. I was also able to do some work on an internal load
+      testing tool with some other interns, also made with .NET. I implemented
+      error handling features which prevented the entire 4hr+ program runtime
+      from proceeding if there was an error in the configuration.
+    </p>
 
-        <h3>
-            Head of Risk and Development - Stevens Student Managed Investment
-            Fund - Fall 2024
-        </h3>
-        <p>
-            I led a team of 4 developers in maintaining and developing new
-            features for the fund's internal website, which provided portfolio
-            information and analysis tools to the fund's equity analysts. The
-            website was written in React, and used Python and Flask for the
-            backend. While I was there, I made a page for the site that showed
-            graphs depicting the fund's performance metrics, which involved
-            pulling data from yfinance, calculating the fund performance metrics
-            with pandas, and then caching the resulting data. I had a great time
-            in this position, I learned a lot about managing people and leading
-            a team of software engineers.
-        </p>
+    <h3>
+      Head of Risk and Development - Stevens Student Managed Investment Fund -
+      Fall 2024
+    </h3>
+    <p>
+      I led a team of 4 developers in maintaining and developing new features
+      for the fund's internal website, which provided portfolio information and
+      analysis tools to the fund's equity analysts. The website was written in
+      React, and used Python and Flask for the backend. While I was there, I
+      made a page for the site that showed graphs depicting the fund's
+      performance metrics, which involved pulling data from yfinance,
+      calculating the fund performance metrics with pandas, and then caching the
+      resulting data. I had a great time in this position, I learned a lot about
+      managing people and leading a team of software engineers.
+    </p>
 
-        <h2>projects</h2>
-        <h3>
-            Reverse engineered photograpy portfolio - <a
-                href="https://photos.baetylboy.biz">live link</a
-            >
-            -
-            <a href="https://github.com/andrewyur/photography-portfolio"
-                >github</a
-            >
-        </h3>
-        <p>
-            I publish all of my photography onto a shared album on apple photos,
-            and I wanted to find a way to display that album on a custom
-            website, without having to worry about posting my photography in
-            multiple places. I found out that apple photos provides a web viewer
-            for the shared album, and so I decided to reverse engineer the front
-            end code, and figure out how to call the private API that the apple
-            photos website uses to fetch photos from the album, so that I could
-            display the photos on my website without having to worry about
-            storing them. Although it was a bit of a slog, I was able to do it
-            successfully, and also eliminate the ~1 minute page load time by
-            setting a cron-job to fetch updated photo ids and store them in a
-            storage bucket. I became very familiar with the devtools debugger
-            with this project, there was 110kb of minified javascript to dig
-            through. I built the website with Svelte, and made a special effort
-            to create a site that looks good on mobile and desktop.
-        </p>
+    <h2>projects</h2>
+    <h3>
+      Reverse engineered photograpy portfolio - <a
+        href="https://photos.baetylboy.biz">live link</a
+      >
+      -
+      <a href="https://github.com/andrewyur/photography-portfolio">github</a>
+    </h3>
+    <p>
+      I publish all of my photography onto a shared album on apple photos, and I
+      wanted to find a way to display that album on a custom website, without
+      having to worry about posting my photography in multiple places. I found
+      out that apple photos provides a web viewer for the shared album, and so I
+      decided to reverse engineer the front end code, and figure out how to call
+      the private API that the apple photos website uses to fetch photos from
+      the album, so that I could display the photos on my website without having
+      to worry about storing them. Although it was a bit of a slog, I was able
+      to do it successfully, and also eliminate the ~1 minute page load time by
+      setting a cron-job to fetch updated photo ids and store them in a storage
+      bucket. I became very familiar with the devtools debugger with this
+      project, there was 110kb of minified javascript to dig through. I built
+      the website with Svelte, and made a special effort to create a site that
+      looks good on mobile and desktop.
+    </p>
 
-        <h3>
-            Collaborative text editor - <a
-                href="https://collab-notepad.baetylboy.biz">live link</a
-            >
-            -
-            <a href="https://github.com/andrewyur/collab_notepad">github</a>
-        </h3>
-        <p>
-            I built a google-docs-style collaborative text editor, that allows
-            multiple people to edit a text document in real time, without having
-            to worry about edit conflicts. I ended up creating my own version of
-            an operational transformation algorithm, which allowed for merging
-            divergent document states of any length. This means that clients can
-            push changes to the server without pulling them in first, or have a
-            really slow connection to the server and still have the same
-            document once the dust settles. I wrote this project in Elixir, a
-            functional programming language that is a sibling of Erlang, famous
-            for its fault tolerance features. It was a really unique experience,
-            and it was also very interesting to tackle the challenges using an
-            dynamically typed functional programming language presented.
-        </p>
+    <h3>
+      Collaborative text editor - <a href="https://collab-notepad.baetylboy.biz"
+        >live link</a
+      >
+      -
+      <a href="https://github.com/andrewyur/collab_notepad">github</a>
+    </h3>
+    <p>
+      I built a google-docs-style collaborative text editor, that allows
+      multiple people to edit a text document in real time, without having to
+      worry about edit conflicts. I ended up creating my own version of an
+      operational transformation algorithm, which allowed for merging divergent
+      document states of any length. This means that clients can push changes to
+      the server without pulling them in first, or have a really slow connection
+      to the server and still have the same document once the dust settles. I
+      wrote this project in Elixir, a functional programming language that is a
+      sibling of Erlang, famous for its fault tolerance features. It was a
+      really unique experience, and it was also very interesting to tackle the
+      challenges using an dynamically typed functional programming language
+      presented.
+    </p>
 
-        <h3>
-            QR code image encoder - <a href="https://github.com/andrewyur/qart"
-                >github</a
-            >
-            - <a href="https://crates.io/crates/qart">crates.io</a>
-            - <a href="https://qart.baetylboy.biz">web version</a>
-        </h3>
-        <p>
-            I wrote a Rust implementation of the process described in
-            <a href="https://research.swtch.com/qart">this article</a>, which
-            utilized multithreading and Rust's high performance to do it at
-            least 100 times faster than other implementations. the process of
-            encoding an image into a working QR code was really complex, and the
-            article only gave vague instructions. I had to piece this together
-            from bits of code across repositories, and without any prior
-            understanding of linear algebra or of QR codes, it was a significant
-            learning experience. Looking back on it, the code is pretty messy
-            and not very idiomatic, I am certain I could write better Rust code
-            these days...
-        </p>
-
-        <h2>other things</h2>
-        <p>
-            I fence for my college (I got <a
-                href="https://docs.google.com/viewer?url=https%3A%2F%2Fusfca.org%2Fwp-admin%2Fadmin-ajax.php%3Fjuwpfisadmin%3Dfalse%26action%3Dwpfd%26task%3Dfile.download%26wpfd_category_id%3D77%26wpfd_file_id%3D42521%26token%3D%26preview%3D1&embedded=true"
-                >all american honorable mention</a
-            >
-            last season), I enjoy playing pool and video games, listening to music
-            and fantasy/sci-fi audiobooks, and
-            <a href="https://photos.baetylboy.biz">photography</a> in my free time
-        </p>
-    </div>
+    <h3>
+      QR code image encoder - <a href="https://github.com/andrewyur/qart"
+        >github</a
+      >
+      - <a href="https://crates.io/crates/qart">crates.io</a>
+      - <a href="https://qart.baetylboy.biz">web version</a>
+    </h3>
+    <p>
+      I wrote a Rust implementation of the process described in
+      <a href="https://research.swtch.com/qart">this article</a>, which utilized
+      multithreading and Rust's high performance to do it at least 100 times
+      faster than other implementations. the process of encoding an image into a
+      working QR code was really complex, and the article only gave vague
+      instructions. I had to piece this together from bits of code across
+      repositories, and without any prior understanding of linear algebra or of
+      QR codes, it was a significant learning experience. Looking back on it,
+      the code is pretty messy and not very idiomatic, I am certain I could
+      write better Rust code these days...
+    </p>
+    <h2>other things</h2>
+    <p>
+      I fence for my college (I got <a
+        href="https://docs.google.com/viewer?url=https%3A%2F%2Fusfca.org%2Fwp-admin%2Fadmin-ajax.php%3Fjuwpfisadmin%3Dfalse%26action%3Dwpfd%26task%3Dfile.download%26wpfd_category_id%3D77%26wpfd_file_id%3D42521%26token%3D%26preview%3D1&embedded=true"
+        >all american honorable mention</a
+      >
+      last season), I enjoy playing pool and video games, listening to music and
+      fantasy/sci-fi audiobooks, and
+      <a href="https://photos.baetylboy.biz">photography</a> in my free time
+    </p>
+  </div>
 </div>
 
 <style>
-    h1,
-    h2,
-    h3,
-    a {
-        font-family: 'MS Gothic', sans-serif;
-        color: var(--light);
-    }
+  h1,
+  h2,
+  h3,
+  a {
+    font-family: "MS Gothic", sans-serif;
+    color: var(--light);
+  }
 
-    p > a,
-    p {
-        font-family: 'MS PGothic', sans-serif;
-        color: var(--light);
-    }
+  p > a,
+  p {
+    font-family: "MS PGothic", sans-serif;
+    color: var(--light);
+  }
 
-    h1 {
-        margin: 0.15em 0;
-        padding: 0.1em 0;
-    }
+  h1 {
+    margin: 0.15em 0;
+    padding: 0.1em 0;
+  }
 
-    p {
-        line-height: 1.2em;
-    }
+  p {
+    line-height: 1.2em;
+  }
 
-    h1,
-    h1 > a {
-        background-color: var(--light);
-        color: var(--dark);
-        width: fit-content;
-    }
+  h1,
+  h1 > a {
+    background-color: var(--light);
+    color: var(--dark);
+    width: fit-content;
+  }
 
+  .content {
+    max-width: 700px;
+  }
+
+  .scroll {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
     .content {
-        max-width: 700px;
+      max-width: 800px;
     }
+  }
 
-    .scroll {
-        box-sizing: border-box;
-        position: relative;
-        z-index: 1;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        width: 100%;
+  /* For large screens (e.g., desktops) */
+  @media (min-width: 1200px) {
+    .content {
+      max-width: 900px;
     }
-
-    @media (min-width: 768px) {
-        .content {
-            max-width: 800px;
-        }
-    }
-
-    /* For large screens (e.g., desktops) */
-    @media (min-width: 1200px) {
-        .content {
-            max-width: 900px;
-        }
-    }
+  }
 </style>
