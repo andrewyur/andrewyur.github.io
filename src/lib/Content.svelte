@@ -7,20 +7,42 @@
     <h1>Andrew Yurovchak</h1>
     <h1>Nashua New Hampshire</h1>
     <h1>
+      <a href="https://git.sr.ht/~amdrew">Sourcehut</a>
       <a href="https://www.linkedin.com/in/andrew-yurovchak">Linkedin</a>
-      <a href="https://github.com/andrewyur">Github</a>
     </h1>
 
     <p>
       I am a software engineer at BAE Systems and a recent computer science
       graduate from Stevens Institute of Technology. I am a really quick
-      learner, and a good software engineer. I enjoy designing and building
-      software.
+      learner, and I enjoy designing and building software.
     </p>
 
     <h2>work experience</h2>
     <h3>Software Engineer - BAE Systems - Summer 2026 : Present</h3>
-    <p>Starting soon...</p>
+    <p>
+      I am currently split part time between two programs. In the background, I
+      am one of two people directly responsible for maintainance and new
+      features for a monster of a Jenkins library used by over 60 repos. I've
+      designed and implemented a port for it into Gitlab CI, added new pipeline
+      types and developer features, found and fixed mysterious bugs, and spent
+      countless hours doing gigantic refactors to improve ease of maintainance
+      and build speed of both libraries. As part of this, I work intimately with
+      Bash, Jenkins and Gitlab CI, all of which I have learned to hate, but
+      bash... less so.
+    </p>
+    <p>
+      The primary occupier of my time right now is the development of
+      application & signal proccessing logic for a RF signal detection
+      application, working with C++, Matlab and 2 in house C++ libraries. This
+      consists of discovering new ways to shoot myself in the foot with C++,
+      trying to wrap my head around various DSP concepts, and combing through
+      badly documented/undocumented code trying to find out how base class X
+      does Y, where property Z comes from, etc. This was my first time ever
+      using Matlab, C++, or doing DSP work, and so this has been a tremendous
+      learning experience for me. Thankfully I have been able to pick it up
+      pretty quickly, and am the primary engineer behind our application logic
+      and signal decode pipeline.
+    </p>
     <h3>Software Engineering Internship - BAE Systems - Summer 2025</h3>
     <p>
       I took ownership of a Fullstack Web UI for a Signals Intelligence
@@ -141,7 +163,7 @@
     </p>
     <h2>other things</h2>
     <p>
-      I fence for my college (I got <a
+      I fenced for my college (I got <a
         href="https://docs.google.com/viewer?url=https%3A%2F%2Fusfca.org%2Fwp-admin%2Fadmin-ajax.php%3Fjuwpfisadmin%3Dfalse%26action%3Dwpfd%26task%3Dfile.download%26wpfd_category_id%3D77%26wpfd_file_id%3D42521%26token%3D%26preview%3D1&embedded=true"
         >all american honorable mention</a
       >
